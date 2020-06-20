@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% load static %}
+<head>
+    {% block page_title %}
+    <title>ERROR 400 |  SHOP</title>
+    {% endblock %}
+</head>
+
+{% block page_content %}
+<div class="container flex-md-row mb-4 h-md-250 rounded">
+    <div class="d-flex justify-content-center">
+        <h1 class="font-weight-bold w-75 p-3 py-4 text-center">ERROR 400: Bad Request.</h1>
+    </div>
+    <div class="d-flex justify-content-center py-5">
+        <div class="px-5">
+            <a class="btn btn-outline-primary" href="{% url 'homepage_view' %}" role="button">Accueil</a>
+        </div>
+        <div class="px-5">
+            <a class="btn btn-outline-primary" href="{% url 'products' %}" role="button">Produits</a>
+        </div>
+    </div>
+</div>
+{% endblock %}

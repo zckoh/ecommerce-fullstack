@@ -1,0 +1,13 @@
+#map {
+    min-height: 325px;
+    height: auto;
+    width: 100%;
+}
+
+.contact-details-tab {
+    display: inline-block; width: 150px;
+}
+
+.opening-days-tab {
+    display: inline-block; width: 150px;
+}

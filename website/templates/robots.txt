@@ -1,0 +1,6 @@
+# robots.txt for https://www.shop-url.com/
+
+User-agent: *
+Disallow: /admin/
+
+Sitemap: https://www.shop-url.com/sitemap.xml
