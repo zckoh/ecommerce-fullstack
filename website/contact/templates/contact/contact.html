@@ -1,0 +1,196 @@
+{% extends "base.html" %}
+{% load static %}
+
+<head>
+    {% block canonical_tag %}
+        <link rel="canonical" href="https://www.tfnglun.com/contact/">
+    {% endblock %}
+
+    {% block additional_static_files %}
+    <link rel="stylesheet" type="text/css" href="{% static 'contact/css/contact.css' %}">
+    {% endblock %}
+
+    {% block page_title %}
+    <title>Contact | T.F Ng Lun</title>
+    {% endblock %}
+</head>
+{% block page_content %}
+<div class="container flex-md-row mb-4 h-md-250 rounded">
+    <h1 class="d-none">Contact T.F. Ng Lun</h1>
+    <div class="row no-gutters pb-4">
+        <div class="col-md-6">
+            <p class="h5 text-muted pt-2">
+                Nos coordonnées
+            </p>
+            <p class="h6">
+                Succession T.F. Ng Lun
+            </p>
+            <div class="row">
+                <div class="col-3">
+                    <p class="my-0">Nom</p>
+                </div>
+                <div class="col-9">
+                    <p class="my-0">: Beryl Lam Ping Fong</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-3">
+                    <p class="my-0">Adresse</p>
+                </div>
+                <div class="col-9">
+                    <p class="my-0">: Route Royale, Curepipe, Ile Maurice</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-3">
+                    <p class="my-0">Téléphone</p>
+                </div>
+                <div class="col-9">
+                    <p class="my-0">: +230 6762990 / +230 6740039</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-3">
+                    <p class="my-0">Adresse e-mail</p>
+                </div>
+                <div class="col-9">
+                    <p>: <a href="mailto:cnglun@intnet.mu">cnglun@intnet.mu</a></p>
+                </div>
+            </div>
+            <p class="h5 text-secondary">
+                Horaires d'ouverture
+            </p>
+            <div class="row">
+                <div class="col-4">
+                    <p class="my-0">Lundi - Vendredi</p>
+                </div>
+                <div class="col-8">
+                    <p class="my-0">: 10:00 - 17:30</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-4">
+                    <p class="my-0">Jeudi</p>
+                </div>
+                <div class="col-8">
+                    <p class="my-0">: 10:00 - 13:00</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-4">
+                    <p class="my-0">Samedi</p>
+                </div>
+                <div class="col-8">
+                    <p class="my-0">: 10:00 - 17:30</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-4">
+                    <p class="my-0">Dimanche</p>
+                </div>
+                <div class="col-8">
+                    <p class="my-0">: Fermé (sauf pendant décembre)</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-4">
+                    <p class="my-0">Jours fériés</p>
+                </div>
+                <div class="col-8">
+                    <p class="my-0">: Fermé</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6" id="map"></div>
+    </div>
+
+    <div>
+        <p class="h5 text-secondary pt-5">
+            Formulaire de contact
+        </p>
+        {{ form.non_field_errors }}
+        <form action="" method="POST">
+            {% csrf_token %}
+            <div class="form-group">
+                <div class="row">
+                    <div class="col-md-6 pb-2">
+                        <label for="{{ form.name.id_for_label }}" class="">Nom</label>
+                        <div class="text-danger" role="alert">
+                            {{ form.name.errors }}
+                        </div>
+                        {{ form.name }}
+                    </div>
+                    <div class="col-md-6">
+                        <label for="{{ form.email_address.id_for_label }}" class="">Adresse e-mail</label>
+                        <div class="text-danger" role="alert">
+                            {{ form.email_address.errors }}
+                        </div>
+                        {{ form.email_address }}
+                        <small id="emailHelp" class="form-text text-muted">Nous ne divulguerons jamais vos
+                            détails</small>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="{{ form.subject.id_for_label }}" class="">Sujet</label>
+                <div class="text-danger" role="alert">
+                    {{ form.subject.errors }}
+                </div>
+                {{ form.subject }}
+            </div>
+            <div class="form-group">
+                <label for="{{ form.message.id_for_label }}">Message</label>
+                <div class="text-danger" role="alert">
+                    {{ form.message.errors }}
+                </div>
+                {{ form.message }}
+            </div>
+            <div class="form-group">
+                <div class="row">
+                    <div class="col-md-6 pb-2">
+                        <div class="g-recaptcha" data-sitekey="6LcsWa4ZAAAAAOdIN7cPMOaCNBUlJAww7EiT92nE"
+                            data-callback="recaptchaCallback"></div>
+                    </div>
+                    <div class="col-md-6 d-flex justify-content-end align-items-end">
+                        <input id="submitBtn" class="btn btn-primary" type="submit" value="Envoyer" disabled>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+<script>
+    function initMap() {
+        var shopLocation = { lat: -20.315215, lng: 57.523019 };
+
+        var contentString =
+            '<div>' +
+            '<p class="font-weight-bold"><b>T.F. NG LUN</b></p>' +
+            '<p class="font-weight-normal">' +
+            'Royal Road, Curepipe, Mauritius</br>' +
+            '<a href="https://www.google.com/maps/place/T.+F.Ng+Lun/@-20.3152917,57.522507,19z/data=!3m1!4b1!4m5!3m4!1s0x217c5c40cd1a17d1:0x676f9ed1b08a923c!8m2!3d-20.315293!4d57.5230542?hl=fr">Voir sur Google Maps</a></p>'
+            '</p>' +
+            '</div>';
+
+        var infowindow = new google.maps.InfoWindow({
+            content: contentString
+        });
+
+        var map = new google.maps.Map(
+            document.getElementById('map'), { zoom: 16, center: shopLocation });
+        var marker = new google.maps.Marker({ position: shopLocation, map: map });
+
+        marker.addListener('click', function () {
+            infowindow.open(map, marker);
+        });
+    }
+</script>
+<script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBvCy0T58Wbh9_qZ9UBfos3WIMxfJ2JYAY&callback=initMap&language=fr&region=MU">
+    </script>
+{% endblock %}
+
+{% block javascript_files %}
+<script src="https://www.google.com/recaptcha/api.js?hl=fr"></script>
+<script src="{% static 'contact/js/contact.js' %}"></script>
+{% endblock %}

@@ -1,0 +1,64 @@
+{% extends "base.html" %}
+{% load static %}
+<head>
+    {% block canonical_tag %}
+        <link rel="canonical" href="https://www.tfnglun.com">
+    {% endblock %}
+
+    {% block additional_static_files %}
+    <link rel="stylesheet" type="text/css" href="{% static 'homepage/css/homepage.css' %}">
+    {% endblock %}
+
+    {% block page_title %}
+    <title>T.F. Ng Lun</title>
+    {% endblock %}
+</head>
+
+{% block page_content %}
+<div class="container jumbotron flex-md-row mb-4 box-shadow h-md-250 text-white homepage-jumbotron-color">
+    <div class="row no-gutters">
+        <div class="col-md-6">
+            <div class="card-body">
+                <h1 id="homepage-header" class="display-4">
+                    Bienvenue chez <br />
+                    T.F. NG LUN
+                </h1>
+                <p class="lead my-3 pb-4 font-italic">
+                  Nous sommes une papêterie basée à Curepipe, Ile Maurice.
+                  Nous vous proposons une gamme de produits tels que des stylos, cahiers,
+                  classeurs, agenda en autres.
+                </p>
+                <p class="lead mb-0"><a href="{% url 'products' %}" class="text-white font-italic"><u><b>Cliquez-ici pour en savoir plus...</b></u></a></p>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <img class="img-thumbnail" src="{% static 'homepage/img/shop.jpg' %}" alt="T.F. Ng Lun Shop Image">
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="pb-3 mb-3 border-bottom">
+        <h2 class="h1 font-italic">Dernières nouvelles</h2>
+        {% if last_updated.updated_date %}
+            <small class="last-updated-timestamp">dernière mise à jour - {{ last_updated.updated_date|date:"SHORT_DATE_FORMAT" }}</small>
+        {% else %}
+            <small class="last-updated-timestamp">dernière mise à jour - N/A</small>
+        {% endif %}
+    </div>
+
+    <!-- This is where you can add/delete notice -->
+    {% for notice in object_list %}
+        <div class="notice-post border-bottom">
+            <h3 class="notice-post-title">{{ notice.notice_title }}</h3>
+            <p>
+                {{ notice.notice_message|linebreaks }}
+            </p>
+        </div>
+    {% empty %}
+    <div class="notice-post border-bottom">
+        <h3 class="notice-post-title">Pas de nouvelles récentes.</h3>
+    </div>
+    {% endfor %}
+
+</div>
+{% endblock %}
