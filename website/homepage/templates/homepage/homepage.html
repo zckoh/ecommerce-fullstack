@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% load static %}
+{% block page_content %}
+<div class="container jumbotron flex-md-row mb-4 box-shadow h-md-250 text-white rounded bg-dark">
+    <div class="row no-gutters">
+        <div class="col-md-6">
+            <div class="card-body">
+                <h1 class="display-4 font-italic">
+                    Hi, welcome to <br />
+                    T.F. NG LUN
+                </h1>
+                <p class="lead my-3">We are a book store based in Curepipe, Mauritius, that sells office
+                    equipments, stationaries, toys, school notebooks, and many more.</p>
+                <p class="lead mb-0"><a href="#" class="text-white font-weight-bold">Find out more about what we
+                        do...</a></p>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <img class="img-thumbnail" src="{% static "shop.jpg" %}" alt="Card image cap">
+        </div>
+    </div>
+</div>
+{% endblock %}
