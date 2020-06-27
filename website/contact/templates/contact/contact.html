@@ -1,0 +1,62 @@
+{% extends "base.html" %}
+{% load static %}
+{% block page_content %}
+<div class="container flex-md-row mb-4 h-md-250 rounded">
+    <div class="row no-gutters">
+        <div class="col-md-6">
+            <div class="page-header">
+                <h1>Contact Us</h1>
+            </div>
+            <div>
+                <p class="h5 text-muted">
+                    Contact Details
+                </p>
+                <p class="h6">
+                    T.F. NG LUN
+                </p>
+                <p>
+                    <span class="contact-details-tab">Address</span>: Royal Road, Curepipe, Mauritius</br>
+                    <span class="contact-details-tab">Phone</span>: +230 6762990</br>
+                    <span class="contact-details-tab">Email</span>: tfnglun@intnet.mu</br>
+                </p>
+                <p class="h5 text-secondary">
+                    Opening Hours
+                </p>
+                <p>
+                    <span class="opening-days-tab">Weekdays</span>: 09:30 - 17:00</br>
+                    <span class="opening-days-tab">Thursdays</span>: 09:30 - 13:00</br>
+                    <span class="opening-days-tab">Saturdays</span>: 09:30 - 17:00</br>
+                    <span class="opening-days-tab">Sundays</span>: Closed (Except during December)</br>
+                    <span class="opening-days-tab">Public Holidays</span>: Closed</br>
+                </p>
+            </div>
+        </div>
+        <div class="col-md-6" id="map"></div>
+    </div>
+</div>
+<script>
+    function initMap() {
+        var shopLocation = { lat: -20.315215, lng: 57.523019 };
+
+        var contentString =
+            '<div >' +
+            '<p><b>T.F. NG LUN</b></p>' +
+            '</div>';
+
+        var infowindow = new google.maps.InfoWindow({
+            content: contentString
+        });
+
+        var map = new google.maps.Map(
+            document.getElementById('map'), { zoom: 16, center: shopLocation });
+        var marker = new google.maps.Marker({ position: shopLocation, map: map });
+
+        marker.addListener('click', function () {
+            infowindow.open(map, marker);
+        });
+    }
+</script>
+<script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBlE2qsjqK3S_3Mh3M_oVjwvqGjRIJ8644&callback=initMap">
+    </script>
+{% endblock %}
