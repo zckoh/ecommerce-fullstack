@@ -1,0 +1,66 @@
+{% extends "base.html" %}
+{% load static %}
+
+<head>
+    {% block page_title %}
+    <link rel="stylesheet" type="text/css" href="{% static 'catalogue/catalogue.css' %}">
+    <title>{{ category_name }} | T.F Ng Lun</title>
+    {% endblock %}
+</head>
+{% block page_content %}
+<div class="container flex-md-row mb-4 h-md-250 rounded">
+    <!-- <div class="row pb-2"> -->
+    <div class="d-flex justify-content-between">
+    <div class="mb-2">
+        <small>Catalogue / <a class="text-dark" href="{% url category_catalogue %}">{{ category_name }}</a></small>
+    </div>
+    <div class="d-inline-flex mb-2">
+        <input type="search" class="form-control ds-input" id="search-input" placeholder="Search not working yet"
+        aria-label="Search for..." autocomplete="off" data-docs-version="4.2" spellcheck="false"
+        role="combobox" aria-autocomplete="list" aria-expanded="false"
+        aria-owns="algolia-autocomplete-listbox-0" dir="auto"
+        style="position: relative; vertical-align: top;">
+        <a class="text-muted py-1" href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="mx-2">
+                <circle cx="10.5" cy="10.5" r="7.5"></circle>
+                <line x1="21" y1="21" x2="15.8" y2="15.8"></line>
+            </svg>
+        </a>
+    </div>
+</div>
+<!-- </div> -->
+    <section class="jumbotron text-center">
+        <div class="container" id="toys-main-header">
+            <h1 class="jumbotron-heading">{{ category_fullname }}</h1>
+            <p class="lead text-muted">{{ category_description }}</p>
+            <!-- TODO: ADD BACKGROUND IMAGE -->
+            <p>TODO: ADD BACKGROUND IMAGE AT “{{ header_background_image }}”</p>
+        </div>
+    </section>
+
+    <div class="album py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                {% for id, product in products.items %}
+                <div class="col-md-4">
+                    <div class="card mb-4 box-shadow">
+                        <a href="{% url product.url_name %}">
+                            <img class="card-img-top product-thumbnail" 
+                                src="{% static product.product_image_path %}"
+                                alt="{{ product.product_image_path }}">
+                        </a>
+                        <div class="card-body">
+                            <a href="{% url product.url_name %}" class="text-dark"><h5 class="card-title">{{ product.product_name }}</h5></a>
+                            <p class="card-text">Model: {{ product.model_no }}</p>
+                            <a href="{% url product.url_name %}" class="btn btn-primary">View</a>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

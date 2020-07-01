@@ -1,5 +1,12 @@
 {% extends "base.html" %}
 {% load static %}
+<head>
+    {% block page_title %}
+    <link rel="stylesheet" type="text/css" href="{% static 'homepage.css' %}">
+    <title>T.F. Ng Lun</title>
+    {% endblock %}
+</head>
+
 {% block page_content %}
 <div class="container jumbotron flex-md-row mb-4 box-shadow h-md-250 text-white rounded bg-dark">
     <div class="row no-gutters">
@@ -18,6 +25,35 @@
         <div class="col-md-6">
             <img class="img-thumbnail" src="{% static "shop.jpg" %}" alt="Card image cap">
         </div>
+    </div>
+</div>
+<div class="container">
+    <div class="pb-3 mb-3 border-bottom">
+        <h2 class="h1 font-italic">Notice</h2>
+        <small class="last-updated-timestamp">last updated - 30/06/2020</small>    
+    </div>
+
+    <!-- This is where you can add/delete notice -->
+    <div class="notice-post border-bottom">
+        <h3 class="notice-post-title">
+            High School Sale in High School A - 14 Aug 2020</h3>
+        <p>Dear customers, we will be selling stationaries and books at the High School Sale in High School A.<br/>
+            Please visit our booth when you are there!</p>
+        <ul>
+            <li>Date: Fri, 14 Aug 2020</li>
+            <li>Time: 11:00 - 16:00</li>
+            <li>Location: Booth 123A</li>
+        </ul>
+    </div>
+
+    <div class="notice-post">
+        <h3 class="notice-post-title">
+            Ganesh Chaturthi - Public Holiday</h3>
+        <p >
+            Dear customers, we will be closed on Sat, 22 Aug 2020 for Ganesh Chaturthi - Public Holiday.<br/>
+            We will re-open on Mon, 24 Aug 2020.<br><br>
+            Sorry for the inconvienience caused.
+        </p>
     </div>
 </div>
 {% endblock %}

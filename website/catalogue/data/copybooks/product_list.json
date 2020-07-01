@@ -1,0 +1,31 @@
+{
+    "1": {
+        "product_name": "Silvine 104 Page A4 Everyday Recycled Wirebound Notebook, Ruled 8mm Feint",
+        "model_no": "B00COPHILI",
+        "product_category": "Copybooks",
+        "belong_to": "copybooks_catalogue",
+        "product_details": [
+            "100% post consumer recycled paper",
+            "104 lined pages",
+            "70gsm recycled paper",
+            "Punched 4 holes for easy filing",
+            "Size: A4 (297 x 210mm)"
+        ],
+        "product_image_path": "catalogue/copybooks/silvine-green.jpg",
+        "url_name": "silvine-a4-notebook"
+    },
+    "2": {
+        "product_name": "Pantone: 10 Notebooks Diary",
+        "model_no": "145214978X",
+        "product_category": "Copybooks",
+        "belong_to": "copybooks_catalogue",
+        "product_details": [
+            "10 mini notebooks",
+            "10 different colors",
+            "70gsm recycled paper",
+            "Size: 10.8 x 6.4 x 13.7 cm"
+        ],
+        "product_image_path": "catalogue/copybooks/pantone-10-notebooks.jpg",
+        "url_name": "pantone-10-notebooks"
+    }
+}

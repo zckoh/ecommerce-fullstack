@@ -130,3 +130,10 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# Django secret key
+django_secret.txt
+django_secret.yaml
+
+# Copied staticfiles
+staticfiles/

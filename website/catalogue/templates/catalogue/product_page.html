@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+{% load static %}
+<head>
+    {% block page_title %}
+    <link rel="stylesheet" type="text/css" href="{% static 'catalogue/catalogue.css' %}">
+    <title>{{ product_name }} | T.F Ng Lun</title>
+    {% endblock %}
+</head>
+{% block page_content %}
+<div class="container flex-md-row mb-4 h-md-250 rounded">
+    <div class="mb-2">
+        <small>Catalogue / 
+            <a class="text-dark" href="{% url belong_to %}">{{ product_category }}</a> / 
+            <a class="text-dark" href="{% url url_name %}">{{ product_name }}</a></small>
+    </div>
+    
+    <div class="row no-gutters">
+        <div class="col-md-6 ">
+            <img class="img-thumbnail d-block mx-auto" src="{% static product_image_path %}" alt="product_image">
+        </div>
+        <div class="col-md-6">
+            <div class="card-body">
+                <h3>{{ product_name }}</h3>
+                <hr>
+                <p>Model: {{ model_no }}</p>
+                <ul>
+                    {% for info in product_details %}
+                        <li>{{ info }}</li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

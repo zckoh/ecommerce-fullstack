@@ -1,0 +1,12 @@
+.notice-post {
+    margin-bottom: 2rem;
+}
+
+.notice-post-title {
+    margin-bottom: .25rem;
+}
+
+.last-updated-timestamp {
+    margin-bottom: 1.25rem;
+    color: #999;
+  }

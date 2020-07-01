@@ -1,0 +1,54 @@
+{
+    "1": {
+        "product_name": "BIC Orange Original Fine Ballpoint Pens Fine Point (0.8 mm) - Black, Box of 20",
+        "model_no": "1199110114",
+        "product_category": "Pens",
+        "belong_to": "pens_catalogue",
+        "product_details": [
+            "The fine 0.8 mm point on these BIC Orange Original Fine pens was designed for people who love thin precise lines",
+            "This box of 20 black ballpoints is great for many sessions of taking notes and drawing",
+            "These BIC Cristal Orange Original Fine ballpoint pens are made to last with enough ink to write for an average of 3 - 5 km"
+        ],
+        "product_image_path": "catalogue/pens/bic-orange-ballpoint.jpg",
+        "url_name": "pens_bic_ballpoint"
+    },
+    "2": {
+        "product_name": "Pilot G2 Premium Retractable Gel Ink Rolling Ball Pen, 1.0 mm Bold Point, Black, Pack of 12",
+        "model_no": "23041681",
+        "product_category": "Pens",
+        "belong_to": "pens_catalogue",
+        "product_details": [
+            "Superior Quality G-2 Gel Ink Ballpoint Pen & Refill Range",
+            "Refillable Using BLS-G2-5 (1 Piece Per Pack)",
+            "Pack of 12"
+        ],
+        "product_image_path": "catalogue/pens/pilot-g2-black.jpg",
+        "url_name": "pilot_g2_black"
+    },
+    "3": {
+        "product_name": "Pentel EnerGel X Gel Rollerball Pen BL107 Set of 12 Assorted",
+        "model_no": "PN65240",
+        "product_category": "Pens",
+        "belong_to": "pens_catalogue",
+        "product_details": [
+            "Quick-drying, smooth-writing gel ink retractable pen",
+            "Set of 12 assorted contains one of each colour available.",
+            "Refillable with LR7 refill."
+        ],
+        "product_image_path": "catalogue/pens/pentel-energel-x.jpg",
+        "url_name": "pentel_energel_x"
+    },
+    "4": {
+        "product_name": "Zebra Mechanical Pencil, Air Fit S, 0.5mm",
+        "model_no": "MA19",
+        "product_category": "Pens",
+        "belong_to": "pens_catalogue",
+        "product_details": [
+            "Mechanical Pencil, Air fit s",
+            "With silicone grip",
+            "For 0.5mm lead, assorted colors"
+        ],
+        "product_image_path": "catalogue/pens/zebra-airfit.jpg",
+        "url_name": "zebra_airfit"
+    }
+}
