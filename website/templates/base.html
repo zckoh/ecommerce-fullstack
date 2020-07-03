@@ -17,6 +17,9 @@
     <!-- Custom static files -->
     <link rel="stylesheet" type="text/css" href="{% static 'base.css' %}">
 
+    {% block additional_static_files %}
+    {% endblock %}
+
     {% block page_title %}
     {% endblock %}
 </head>
@@ -25,42 +28,16 @@
     <div class="container">
         <header class="base-header py-3">
             <div class="row flex-nowrap justify-content-center align-items-center">
-                <!-- <div class="col-4 pt-1"></div> -->
                 <div class="col text-center">
                     <a class="base-header-logo text-dark" href="{% url 'homepage_view' %}">T.F. NG LUN</a>
                 </div>
-                <!-- <div class="col-4 d-flex justify-content-end align-items-center">
-                    <input type="search" class="form-control ds-input" id="search-input" placeholder="Search..."
-                    aria-label="Search for..." autocomplete="off" data-docs-version="4.2" spellcheck="false"
-                    role="combobox" aria-autocomplete="list" aria-expanded="false"
-                    aria-owns="algolia-autocomplete-listbox-0" dir="auto"
-                    style="position: relative; vertical-align: top;">
-                    <a class="text-muted" href="#">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                            class="mx-3">
-                            <circle cx="10.5" cy="10.5" r="7.5"></circle>
-                            <line x1="21" y1="21" x2="15.8" y2="15.8"></line>
-                        </svg>
-                    </a>
-                </div> -->
             </div>
         </header>
 
         <div class="py-1 mb-2">
             <nav class="nav d-flex justify-content-center">
                 <a class="btn btn-link p-2 text-muted" href="{% url 'about_view' %}">About us</a>
-                <div class="dropdown">
-                    <button class="btn dropdown-toggle p-2 text-muted" type="button" id="catalogueDropdownMenu"
-                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Catalogue
-                    </button>
-                    <div class="dropdown-menu" aria-labelledby="catalogueDropdownMenu">
-                        <a class="dropdown-item text-muted" href="{% url 'pens_catalogue' %}">Pens/Plumes</a>
-                        <a class="dropdown-item text-muted" href="{% url 'copybooks_catalogue' %}">Copybooks/Cahiers</a>
-                        <a class="dropdown-item text-muted" href="{% url 'toys_catalogue' %}">Toys/Jouets</a>
-                    </div>
-                </div>
+                <a class="btn btn-link p-2 text-muted" href="{% url 'catalogue' %}">Catalogue</a>
                 <a class="btn btn-link p-2 text-muted" href="{% url 'contact_view' %}">Contact us</a>
             </nav>
         </div>
@@ -88,6 +65,9 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
         integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
         crossorigin="anonymous"></script>
+
+    {% block javascript_files %}
+    {% endblock %}
 </body>
 
 </html>

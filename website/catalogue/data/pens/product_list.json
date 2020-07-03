@@ -1,5 +1,5 @@
-{
-    "1": {
+[
+    {
         "product_name": "BIC Orange Original Fine Ballpoint Pens Fine Point (0.8 mm) - Black, Box of 20",
         "model_no": "1199110114",
         "product_category": "Pens",
@@ -10,9 +10,10 @@
             "These BIC Cristal Orange Original Fine ballpoint pens are made to last with enough ink to write for an average of 3 - 5 km"
         ],
         "product_image_path": "catalogue/pens/bic-orange-ballpoint.jpg",
-        "url_name": "pens_bic_ballpoint"
+        "url_name": "pens_bic_ballpoint",
+        "url_link": "pens/pens_bic_ballpoint.html"
     },
-    "2": {
+    {
         "product_name": "Pilot G2 Premium Retractable Gel Ink Rolling Ball Pen, 1.0 mm Bold Point, Black, Pack of 12",
         "model_no": "23041681",
         "product_category": "Pens",
@@ -23,9 +24,10 @@
             "Pack of 12"
         ],
         "product_image_path": "catalogue/pens/pilot-g2-black.jpg",
-        "url_name": "pilot_g2_black"
+        "url_name": "pilot_g2_black",
+        "url_link": "pens/pilot_g2_black.html"
     },
-    "3": {
+    {
         "product_name": "Pentel EnerGel X Gel Rollerball Pen BL107 Set of 12 Assorted",
         "model_no": "PN65240",
         "product_category": "Pens",
@@ -36,9 +38,10 @@
             "Refillable with LR7 refill."
         ],
         "product_image_path": "catalogue/pens/pentel-energel-x.jpg",
-        "url_name": "pentel_energel_x"
+        "url_name": "pentel_energel_x",
+        "url_link": "pens/pentel_energel_x.html"
     },
-    "4": {
+    {
         "product_name": "Zebra Mechanical Pencil, Air Fit S, 0.5mm",
         "model_no": "MA19",
         "product_category": "Pens",
@@ -49,6 +52,7 @@
             "For 0.5mm lead, assorted colors"
         ],
         "product_image_path": "catalogue/pens/zebra-airfit.jpg",
-        "url_name": "zebra_airfit"
+        "url_name": "zebra_airfit",
+        "url_link": "pens/zebra_airfit.html"
     }
-}
+]

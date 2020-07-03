@@ -9,9 +9,10 @@
 {% block page_content %}
 <div class="container flex-md-row mb-4 h-md-250 rounded">
     <div class="mb-2">
-        <small>Catalogue / 
-            <a class="text-dark" href="{% url belong_to %}">{{ product_category }}</a> / 
-            <a class="text-dark" href="{% url url_name %}">{{ product_name }}</a></small>
+        <small>
+            <a class="text-dark" href="{% url 'catalogue' %}">Catalogue</a> / {{ product_category }} /
+            <a class="text-dark" href="{% url url_name %}">{{ product_name }}</a>
+        </small>
     </div>
     
     <div class="row no-gutters">

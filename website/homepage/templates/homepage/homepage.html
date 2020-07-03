@@ -1,8 +1,11 @@
 {% extends "base.html" %}
 {% load static %}
 <head>
+    {% block additional_static_files %}
+    <link rel="stylesheet" type="text/css" href="{% static 'homepage/css/homepage.css' %}">
+    {% endblock %}
+
     {% block page_title %}
-    <link rel="stylesheet" type="text/css" href="{% static 'homepage.css' %}">
     <title>T.F. Ng Lun</title>
     {% endblock %}
 </head>
@@ -23,7 +26,7 @@
             </div>
         </div>
         <div class="col-md-6">
-            <img class="img-thumbnail" src="{% static "shop.jpg" %}" alt="Card image cap">
+            <img class="img-thumbnail" src="{% static 'homepage/img/shop.jpg' %}" alt="Card image cap">
         </div>
     </div>
 </div>

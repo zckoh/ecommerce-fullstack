@@ -1,8 +1,11 @@
 {% extends "base.html" %}
 {% load static %}
 <head>
+    {% block additional_static_files %}
+    <link rel="stylesheet" type="text/css" href="{% static 'contact/css/contact.css' %}">
+    {% endblock %}
+
     {% block page_title %}
-    <link rel="stylesheet" type="text/css" href="{% static 'contact.css' %}">
     <title>Contact | T.F Ng Lun</title>
     {% endblock %}
 </head>

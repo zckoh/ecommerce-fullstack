@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+{% load static %}
+
+<head>
+    {% block page_title %}
+    <link rel="stylesheet" type="text/css" href="{% static 'catalogue/catalogue.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'catalogue/css/algolia.css' %}">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/instantsearch.css@7.3.1/themes/algolia-min.css"
+        integrity="sha256-HB49n/BZjuqiCtQQf49OdZn63XuKFaxcIHWf0HNKte8=" crossorigin="anonymous">
+
+    <title>Test Search | T.F Ng Lun</title>
+    {% endblock %}
+</head>
+{% block page_content %}
+<div class="container flex-md-row mb-4 h-md-250 rounded">
+    <div class="d-flex justify-content-between">
+        <div class="mb-2">
+            <small>Catalogue / <a class="text-dark" href="#">Test Search</a></small>
+        </div>
+        <div id="search-box" class="d-inline-flex mb-2"></div>
+    </div>
+    <div class="conatiner bg-light">
+        <div class="row">
+            <div class="col-md-2 pt-4 pl-4">
+                <h5 class="border-bottom">Category</h5>
+                <div id="refinement-list"></div>
+            </div>
+            <div class="col-md-10">
+                <div class="album py-5 bg-light">
+                    <div class="container">
+                        <div id="hits"></div>
+                    </div>
+                    <div id="pagination"></div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</div>
+{% endblock %}

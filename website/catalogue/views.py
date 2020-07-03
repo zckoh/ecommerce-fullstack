@@ -1,6 +1,5 @@
 from django.shortcuts import render
 from django.views.generic.base import TemplateView
-from . import models
 
 # Create your views here.
 class ProductPage(TemplateView):
@@ -8,3 +7,9 @@ class ProductPage(TemplateView):
 
 class CataloguePage(TemplateView):
     template_name = "catalogue/product_catalogue.html"
+
+def test_search(request):
+    return render(request, "catalogue/test_search.html")
+
+def catalogue(request):
+    return render(request, "catalogue/catalogue.html")
