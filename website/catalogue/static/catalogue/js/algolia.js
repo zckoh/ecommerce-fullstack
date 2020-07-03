@@ -21,6 +21,9 @@ search.addWidgets([
         container: '#refinement-list',
         attribute: 'product_category',
     }),
+    instantsearch.widgets.poweredBy({
+      container: '#powered-by',
+    }),
 ]);
 
 // Hits
