@@ -1,8 +1,11 @@
 {% extends "base.html" %}
 {% load static %}
 <head>
-    {% block page_title %}
+    {% block additional_static_files %}
     <link rel="stylesheet" type="text/css" href="{% static 'catalogue/catalogue.css' %}">
+    {% endblock %}
+
+    {% block page_title %}
     <title>{{ product_name }} | T.F Ng Lun</title>
     {% endblock %}
 </head>
@@ -10,7 +13,7 @@
 <div class="container flex-md-row mb-4 h-md-250 rounded">
     <div class="mb-2">
         <small>
-            <a class="text-dark" href="{% url 'catalogue' %}">Catalogue</a> / {{ product_category }} /
+            <a class="text-dark" href="{% url 'catalogue' %}">Catalogue</a> / <a class="text-dark" href="{% url 'catalogue' %}{{ category_link }}">{{ product_category }}</a> /
             <a class="text-dark" href="{% url url_name %}">{{ product_name }}</a>
         </small>
     </div>
