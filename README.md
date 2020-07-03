@@ -90,14 +90,15 @@ cd tf-nglun
 pipenv shell
 ```
 
-### To run django locally
+### To run django locally:
 ```bash
 cd website
 python manage.py runserver
 ```
 
-### To deploy to GAE (Google App Engine):
+### To deploy to Production/GAE (Google App Engine):
 ```bash
+## WARNING: Don't forget to update DEBUG value to False in website/settings.py 
 cd website
 
 ## Collect all static files to be uploaded to GAE
@@ -109,3 +110,46 @@ gcloud app deploy
 ## Once deployed, browse and check the website
 gcloud app browse
 ```
+
+### To add new products:
+#### Adding product to existing product category
+1) Prepare the product image (ideally a .jpg file)
+2) Add the image to correct directory:  `website/static/catalogue/<product_category>/image.jpg`
+3) Add the following product information in `website/catalogue/data/<product_category>/product_list.json`
+   Edit the values below to fit your product:
+   ```json
+    {
+        "product_name": "Zebra Mechanical Pencil, Air Fit S, 0.5mm",
+        "model_no": "MA19",
+        "product_category": "Pens",
+        "belong_to": "pens_catalogue",
+        "product_details": [
+            "Mechanical Pencil, Air fit s",
+            "With silicone grip",
+            "For 0.5mm lead, assorted colors"
+        ],
+        "product_image_path": "catalogue/pens/zebra-airfit.jpg",
+        "url_name": "zebra_airfit",
+        "url_link": "pens/zebra_airfit.html"
+    }
+   ```
+4) Update the index in Algolia
+   - Go to the Algolia dashboard - https://www.algolia.com/apps/N3F75G0U52/dashboard
+   - Select "Add records", then select "Add manually"
+   - Copy the JSON data that you provided in step 3 and paste it in.
+   - Click "Save"
+5) Repeat steps 1-4 if you have more products to add, else proceed to next step
+5) Verify changes
+   - Run local django server, verify that the new product is added
+     ```bash
+     python manage.py runserver
+     ```
+6) Save changes and commit/push to Git
+   - Save changes
+   - `git add` the new/updated files
+   - Make a `git commit`
+   - `git push`
+7) Deploy to production!
+
+
+#### Adding product to new product category

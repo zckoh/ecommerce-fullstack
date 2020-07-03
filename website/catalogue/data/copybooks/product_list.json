@@ -29,5 +29,19 @@
         "product_image_path": "catalogue/copybooks/pantone-10-notebooks.jpg",
         "url_name": "pantone-10-notebooks",
         "url_link": "copybooks/pantone-10-notebooks.html"
+    },
+    {
+        "product_name": "Soft Cover Notebook Blue - Atlas",
+        "model_no": "BN120",
+        "product_category": "Copybooks",
+        "belong_to": "copybooks_catalogue",
+        "product_details": [
+            "Soft Cover Ruled Notebook",
+            "Dimensions: W100mm x H160mm",
+            "120 Pages"
+        ],
+        "product_image_path": "catalogue/copybooks/atlas-blue-120-pages.jpg",
+        "url_name": "atlas-soft-cover-copybook",
+        "url_link": "copybooks/atlas-soft-cover-copybook.html"
     }
 ]
