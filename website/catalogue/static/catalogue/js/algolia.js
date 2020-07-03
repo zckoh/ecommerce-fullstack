@@ -11,7 +11,7 @@ const search = instantsearch({
 
 search.addWidgets([
     instantsearch.widgets.configure({
-        hitsPerPage: 10,
+        hitsPerPage: 6,
     }),
     instantsearch.widgets.searchBox({
         container: '#search-box',
