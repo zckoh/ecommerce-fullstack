@@ -1,5 +1,21 @@
 [
     {
+        "product_name": "Cahier 17x22, 96pg, Seyes/Gros Carreaux, Couverture Polypro",
+        "model_no": "C1722",
+        "product_category": "Copybooks",
+        "belong_to": "copybooks_catalogue",
+        "product_details": [
+            "Couverture Polypro",
+            "Marque Conquerant",
+            "Seyes/ Gros Carreaux",
+            "Dimensions 17x22"
+        ],
+        "product_image_path": "catalogue/copybooks/cahier_17x22_96p_seyes.jpeg",
+        "url_name": "cahier_17x22_96p_seyes_polypro_conquerant",
+        "url_link": "copybooks/cahier_17x22_96p_seyes_polypro_conquerant.html",
+        "objectID": "5055621"
+    },
+    {
         "product_name": "MG Gundam Exia Ignition Mode 1/100 Model Kit",
         "model_no": "BAN189481",
         "product_category": "Toys",
