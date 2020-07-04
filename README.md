@@ -120,7 +120,17 @@ Go to the following link to install Python in your system:
     export ALGOLIA_ADMIN_API_KEY="VALUE_OF_ALGOLIA_ADMIN_API_KEY"
     ```
 
-
+4) Now the following files should look something like this (values below are example values):
+   - `website/secrets.txt`: 
+        ```bash
+        export DJANGO_SECRET="1234567890qwertyuiop[]asdfghjklzxcvbnm"
+        export ALGOLIA_ADMIN_API_KEY="abcdefghijklmnopqrstuvwxvyz"
+        ```
+   - `website/secrets.yaml`:
+        ```yaml
+        env_variables:
+          DJANGO_SECRET: '1234567890qwertyuiop[]asdfghjklzxcvbnm'
+        ```
 
 ### Now you are all set!
 
@@ -135,7 +145,9 @@ pipenv shell
 ```bash
 cd website
 source secrets.txt
-pipenv run python manage.py runserver
+
+## NOTE: DON'T FORGET TO SET DEBUG = True in website/settings.py first when testing locally
+python manage.py runserver
 ```
 
 ### To deploy to Production/GAE (Google App Engine):
