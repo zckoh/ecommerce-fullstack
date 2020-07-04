@@ -141,16 +141,23 @@ python manage.py runserver
 ### To deploy to Production/GAE (Google App Engine):
 ```bash
 cd website
+
+# make the script executable 
+chmod +x ./scripts/deploy.sh
+
+# run the script
 ./scripts/deploy.sh
 # Then follow the prompts accordingly
 ```
 
 ### To add new products:
-#### Adding product to existing product category
-1) Prepare the product image (ideally a .jpg file)
-2) Add the image to correct directory:  `website/static/catalogue/<product_category>/image.jpg`
-3) Add the following product information in `website/catalogue/data/<product_category>/product_list.json`
-   Edit the values below to fit your product:
+#### Adding product(s) to existing product category
+1) Prepare the product image(s) (ideally a .jpg file)
+2) Add the image(s) to correct directory:  `tf-nglun/website/static/catalogue/<product_category>/image.jpg`
+3) Go to Algolia dashboard for this project - https://www.algolia.com/apps/9SXIDIVU1E/dashboard
+4) Select "Add records", then select "Add manually"
+5) Copy the JSON example below and replace the field values according to the product details:  
+   JSON example
    ```json
     {
         "product_name": "Zebra Mechanical Pencil, Air Fit S, 0.5mm",
@@ -167,23 +174,20 @@ cd website
         "url_link": "pens/zebra_airfit.html"
     }
    ```
-4) Update the index in Algolia
-   - Go to the Algolia dashboard for this project - https://www.algolia.com/apps/9SXIDIVU1E/dashboard
-   - Select "Add records", then select "Add manually"
-   - Copy the JSON data that you provided in step 3 and paste it in.
-   - Click "Save"
-5) Repeat steps 1-4 if you have more products to add, else proceed to next step
-5) Verify changes
+6) Click "Save"
+7) Repeat steps 1-6 if you have more products to add, else proceed to next step
+8) Verify changes
    - Run local django server, verify that the new product is added
      ```bash
      python manage.py runserver
      ```
-6) Save changes and commit/push to Git
-   - Save changes
-   - `git add` the new/updated files
-   - Make a `git commit`
-   - `git push`
-7) Deploy to production!
+9)  Save changes and commit/push to Git
+    - Save changes
+    - `git add` the new/updated files
+    - Make a `git commit`
+    - `git push`
+11) Deploy to production!
 
 
 #### Adding product to new product category
+TODO
