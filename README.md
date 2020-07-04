@@ -134,6 +134,7 @@ pipenv shell
 ### To run django locally:
 ```bash
 cd website
+source secrets.txt
 python manage.py runserver
 ```
 
