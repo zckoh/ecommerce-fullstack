@@ -1,6 +1,6 @@
 const searchClient = algoliasearch(
-    'N3F75G0U52',
-    '35f5cf9db1a99f6024840246fdf8114c'
+    '9SXIDIVU1E',
+    '2f579f9adf3af05e58b1859a5f182edb'
 );
 
 const search = instantsearch({

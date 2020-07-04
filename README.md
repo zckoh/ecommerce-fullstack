@@ -134,7 +134,7 @@ gcloud app browse
     }
    ```
 4) Update the index in Algolia
-   - Go to the Algolia dashboard for this project - https://www.algolia.com/apps/N3F75G0U52/dashboard
+   - Go to the Algolia dashboard for this project - https://www.algolia.com/apps/9SXIDIVU1E/dashboard
    - Select "Add records", then select "Add manually"
    - Copy the JSON data that you provided in step 3 and paste it in.
    - Click "Save"
