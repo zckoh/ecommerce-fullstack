@@ -9,4 +9,8 @@
 .last-updated-timestamp {
     margin-bottom: 1.25rem;
     color: #999;
-  }
+}
+
+.homepage-jumbotron-color {
+    background-color: rgb(136, 28, 28) !important;
+}

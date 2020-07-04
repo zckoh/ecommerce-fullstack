@@ -5,10 +5,10 @@ from django.conf.urls.static import static
 import os
 
 urlpatterns = [
-    path("", views.catalogue, name="catalogue")
+    path("", views.products, name="products")
 ]
 
-# base link to go back to catalogue with filter
+# base link to go back to products with filter
 category_refinement_base_link = "?products_index%5BrefinementList%5D%5Bproduct_category%5D%5B0%5D="
 
 # Add additional urls for each product

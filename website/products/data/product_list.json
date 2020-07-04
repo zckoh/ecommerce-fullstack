@@ -3,12 +3,11 @@
         "product_name": "Classeur A4, dos arrondis",
         "model_no": "CLA4DA",
         "product_category": "Classeurs",
-        "belong_to": "classeur_catalogue",
         "product_details": [
             "Format A4",
             "Marque Exacompta"
         ],
-        "product_image_path": "catalogue/classeurs/exacompta_a4.png",
+        "product_image_path": "products/classeurs/exacompta_a4.png",
         "url_name": "exacompta_a4",
         "url_link": "classeurs/exacompta_a4.html",
         "objectID": "5056551"
@@ -17,14 +16,13 @@
         "product_name": "Cahier 17x22, 96pg, Seyes/Gros Carreaux, Couverture Polypro",
         "model_no": "C1722",
         "product_category": "Copybooks",
-        "belong_to": "copybooks_catalogue",
         "product_details": [
             "Couverture Polypro",
             "Marque Conquerant",
             "Seyes/ Gros Carreaux",
             "Dimensions 17x22"
         ],
-        "product_image_path": "catalogue/copybooks/cahier_17x22_96p_seyes.jpeg",
+        "product_image_path": "products/copybooks/cahier_17x22_96p_seyes.jpeg",
         "url_name": "cahier_17x22_96p_seyes_polypro_conquerant",
         "url_link": "copybooks/cahier_17x22_96p_seyes_polypro_conquerant.html",
         "objectID": "5055621"
@@ -33,13 +31,12 @@
         "product_name": "MG Gundam Exia Ignition Mode 1/100 Model Kit",
         "model_no": "BAN189481",
         "product_category": "Toys",
-        "belong_to": "toys_catalogue",
         "product_details": [
             "Gundam",
             "Awesome",
             "1000+ Pieces"
         ],
-        "product_image_path": "catalogue/toys/gundam-exia.jpg",
+        "product_image_path": "products/toys/gundam-exia.jpg",
         "url_name": "toys_gundam",
         "url_link": "toys/toys_gundam.html",
         "objectID": "504838001"
@@ -48,13 +45,12 @@
         "product_name": "LEGO Architecture Eiffel Tower 321 Pieces Set (21019)",
         "model_no": "21019",
         "product_category": "Toys",
-        "belong_to": "toys_catalogue",
         "product_details": [
             "LEGO",
             "Eiffel Tower",
             "321 Pieces"
         ],
-        "product_image_path": "catalogue/toys/lego-eiffel-tower.jpg",
+        "product_image_path": "products/toys/lego-eiffel-tower.jpg",
         "url_name": "toys_lego_eiffel",
         "url_link": "toys/toys_lego_eiffel.html",
         "objectID": "504837001"
@@ -63,12 +59,11 @@
         "product_name": "Teletubbies - Red",
         "model_no": "KX125-90A",
         "product_category": "Toys",
-        "belong_to": "toys_catalogue",
         "product_details": [
             "Teddy bear",
             "Made from 100% cotton"
         ],
-        "product_image_path": "catalogue/toys/teletubbies-red.jpeg",
+        "product_image_path": "products/toys/teletubbies-red.jpeg",
         "url_name": "toys_teletubbies",
         "url_link": "toys/toys_teletubbies.html",
         "objectID": "5048361"
@@ -77,13 +72,12 @@
         "product_name": "Zebra Mechanical Pencil, Air Fit S, 0.5mm",
         "model_no": "MA19",
         "product_category": "Pens",
-        "belong_to": "pens_catalogue",
         "product_details": [
             "Mechanical Pencil, Air fit s",
             "With silicone grip",
             "For 0.5mm lead, assorted colors"
         ],
-        "product_image_path": "catalogue/pens/zebra-airfit.jpg",
+        "product_image_path": "products/pens/zebra-airfit.jpg",
         "url_name": "zebra_airfit",
         "url_link": "pens/zebra_airfit.html",
         "objectID": "504835001"
@@ -92,13 +86,12 @@
         "product_name": "Pentel EnerGel X Gel Rollerball Pen BL107 Set of 12 Assorted",
         "model_no": "PN65240",
         "product_category": "Pens",
-        "belong_to": "pens_catalogue",
         "product_details": [
             "Quick-drying, smooth-writing gel ink retractable pen",
             "Set of 12 assorted contains one of each colour available.",
             "Refillable with LR7 refill."
         ],
-        "product_image_path": "catalogue/pens/pentel-energel-x.jpg",
+        "product_image_path": "products/pens/pentel-energel-x.jpg",
         "url_name": "pentel_energel_x",
         "url_link": "pens/pentel_energel_x.html",
         "objectID": "504834001"
@@ -107,13 +100,12 @@
         "product_name": "Pilot G2 Premium Retractable Gel Ink Rolling Ball Pen, 1.0 mm Bold Point, Black, Pack of 12",
         "model_no": "23041681",
         "product_category": "Pens",
-        "belong_to": "pens_catalogue",
         "product_details": [
             "Superior Quality G-2 Gel Ink Ballpoint Pen & Refill Range",
             "Refillable Using BLS-G2-5 (1 Piece Per Pack)",
             "Pack of 12"
         ],
-        "product_image_path": "catalogue/pens/pilot-g2-black.jpg",
+        "product_image_path": "products/pens/pilot-g2-black.jpg",
         "url_name": "pilot_g2_black",
         "url_link": "pens/pilot_g2_black.html",
         "objectID": "504833001"
@@ -122,13 +114,12 @@
         "product_name": "BIC Orange Original Fine Ballpoint Pens Fine Point (0.8 mm) - Black, Box of 20",
         "model_no": "1199110114",
         "product_category": "Pens",
-        "belong_to": "pens_catalogue",
         "product_details": [
             "The fine 0.8 mm point on these BIC Orange Original Fine pens was designed for people who love thin precise lines",
             "This box of 20 black ballpoints is great for many sessions of taking notes and drawing",
             "These BIC Cristal Orange Original Fine ballpoint pens are made to last with enough ink to write for an average of 3 - 5 km"
         ],
-        "product_image_path": "catalogue/pens/bic-orange-ballpoint.jpg",
+        "product_image_path": "products/pens/bic-orange-ballpoint.jpg",
         "url_name": "pens_bic_ballpoint",
         "url_link": "pens/pens_bic_ballpoint.html",
         "objectID": "5048321"
@@ -137,13 +128,12 @@
         "product_name": "Soft Cover Notebook Blue - Atlas",
         "model_no": "BN120",
         "product_category": "Copybooks",
-        "belong_to": "copybooks_catalogue",
         "product_details": [
             "Soft Cover Ruled Notebook",
             "Dimensions: W100mm x H160mm",
             "120 Pages"
         ],
-        "product_image_path": "catalogue/copybooks/atlas-blue-120-pages.jpg",
+        "product_image_path": "products/copybooks/atlas-blue-120-pages.jpg",
         "url_name": "atlas-soft-cover-copybook",
         "url_link": "copybooks/atlas-soft-cover-copybook.html",
         "objectID": "504806001"
@@ -152,14 +142,13 @@
         "product_name": "Pantone: 10 Notebooks Diary",
         "model_no": "145214978X",
         "product_category": "Copybooks",
-        "belong_to": "copybooks_catalogue",
         "product_details": [
             "10 mini notebooks",
             "10 different colors",
             "70gsm recycled paper",
             "Size: 10.8 x 6.4 x 13.7 cm"
         ],
-        "product_image_path": "catalogue/copybooks/pantone-10-notebooks.jpg",
+        "product_image_path": "products/copybooks/pantone-10-notebooks.jpg",
         "url_name": "pantone-10-notebooks",
         "url_link": "copybooks/pantone-10-notebooks.html",
         "objectID": "504805001"
@@ -168,7 +157,6 @@
         "product_name": "Silvine 104 Page A4 Everyday Recycled Wirebound Notebook, Ruled 8mm Feint",
         "model_no": "B00COPHILI",
         "product_category": "Copybooks",
-        "belong_to": "copybooks_catalogue",
         "product_details": [
             "100% post consumer recycled paper",
             "104 lined pages",
@@ -176,7 +164,7 @@
             "Punched 4 holes for easy filing",
             "Size: A4 (297 x 210mm)"
         ],
-        "product_image_path": "catalogue/copybooks/silvine-green.jpg",
+        "product_image_path": "products/copybooks/silvine-green.jpg",
         "url_name": "silvine-a4-notebook",
         "url_link": "copybooks/silvine-a4-notebook.html",
         "objectID": "5048041"

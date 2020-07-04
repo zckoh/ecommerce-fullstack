@@ -2,7 +2,7 @@
 {% load static %}
 <head>
     {% block additional_static_files %}
-    <link rel="stylesheet" type="text/css" href="{% static 'catalogue/css/catalogue.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'products/css/products.css' %}">
     {% endblock %}
 
     {% block page_title %}
@@ -13,7 +13,7 @@
 <div class="container flex-md-row mb-4 h-md-250 rounded">
     <div class="mb-2">
         <small>
-            <a class="text-dark" href="{% url 'catalogue' %}">Catalogue</a> / <a class="text-dark" href="{% url 'catalogue' %}{{ category_link }}">{{ product_category }}</a> /
+            <a class="text-dark" href="{% url 'products' %}">Products</a> / <a class="text-dark" href="{% url 'products' %}{{ category_link }}">{{ product_category }}</a> /
             <a class="text-dark" href="{% url url_name %}">{{ product_name }}</a>
         </small>
     </div>

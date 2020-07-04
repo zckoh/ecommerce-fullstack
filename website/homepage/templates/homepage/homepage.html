@@ -11,7 +11,7 @@
 </head>
 
 {% block page_content %}
-<div class="container jumbotron flex-md-row mb-4 box-shadow h-md-250 text-white rounded bg-dark">
+<div class="container jumbotron flex-md-row mb-4 box-shadow h-md-250 text-white homepage-jumbotron-color">
     <div class="row no-gutters">
         <div class="col-md-6">
             <div class="card-body">
@@ -21,8 +21,7 @@
                 </h1>
                 <p class="lead my-3">We are a book store based in Curepipe, Mauritius, that sells office
                     equipments, stationaries, toys, school notebooks, and many more.</p>
-                <p class="lead mb-0"><a href="{% url 'about_view' %}" class="text-white font-weight-bold">Find out more about what we
-                        do...</a></p>
+                <p class="lead mb-0"><a href="{% url 'products' %}" class="text-white font-weight-bold">Find out more about the products we sell...</a></p>
             </div>
         </div>
         <div class="col-md-6">
@@ -32,7 +31,7 @@
 </div>
 <div class="container">
     <div class="pb-3 mb-3 border-bottom">
-        <h2 class="h1 font-italic">Notice</h2>
+        <h2 class="h1 font-italic">Latest News</h2>
         <small class="last-updated-timestamp">last updated - 30/06/2020</small>    
     </div>
 
