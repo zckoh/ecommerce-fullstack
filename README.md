@@ -84,27 +84,43 @@ Go to the following link to install Python in your system:
     ```
     This will install the required packages and generate the `Pipfile` and `Pipfile.lock` files in the project directory
 
-    Then save the dependencies list to `website/requirements.txt`:
+    Then run the following command to save the dependencies list to `website/requirements.txt`:
     ```bash
     pip freeze > website/requirements.txt
     ```
 
 3) Setup `secrets` file:  
-    For Django, it requires a DJANGO_SECRET, which can be generated using the following command:
+    Use the following commands:  
+    ```bash
+    # creates a file named "secrets.txt" in the directory "website"
+    touch website/secrets.txt
+
+    # creates a file named "secrets.yaml" in the directory "website"
+    touch website/secrets.yaml
+    ```
+
+    Run the following command which will generate a string of random characters. Copy this string, you will need in the next steps: 
     ```
     python -c 'from django.core.management.utils import get_random_secret_key; print(get_random_secret_key())'
     ```
-    Then we need to create a secret file `website/secrets.txt` to keep the secret key:
+
+    Open the file `website/secrets.txt`, and add the following line in the file, replacing `VALUE_OF_DJANGO_SECRET` with the string which you've copied from the previous python command:
     ```bash
-    # place the following line in website/secrets.txt
-    export DJANGO_SECRET="VALUE OF DJANGO_SECRET"
+    export DJANGO_SECRET="VALUE_OF_DJANGO_SECRET"
     ```
-    For GAE, we also need to create a secret file `website/secrets.yaml` which will contain the same secret key:
+    
+    Open the file `website/secrets.yaml`, and add the following line in the file, replacing `VALUE_OF_DJANGO_SECRET` with the string which you've copied from the previous python command:
     ```yaml
-    # Add the following line the website/secrets.yaml
     env_variables:
-      DJANGO_SECRET: 'VALUE OF DJANGO_SECRET'
-    ``` 
+      DJANGO_SECRET: 'VALUE_OF_DJANGO_SECRET'
+    ```
+
+    Open the file `website/secrets.txt` again, and add the following line in the file. Go to https://www.algolia.com/apps/9SXIDIVU1E/api-keys/all, and copy the Admin API Key. Now replace `VALUE_OF_ALGOLIA_ADMIN_API_KEY` with the copied API Key value:
+    ```bash
+    export ALGOLIA_ADMIN_API_KEY="VALUE_OF_ALGOLIA_ADMIN_API_KEY"
+    ```
+
+
 
 ### Now you are all set!
 
