@@ -150,11 +150,20 @@ chmod +x ./scripts/deploy.sh
 # Then follow the prompts accordingly
 ```
 
+Manual steps to deploy:
+```bash
+cd tf-nglun/website
+python manage.py collectstatic
+
+gcloud app deploy
+```
+
+
 ### To add new products:
 #### Adding product(s) to existing product category
 1) Prepare the product image(s) (ideally a .jpg file)
 2) Add the image(s) to correct directory:  `tf-nglun/website/static/catalogue/<product_category>/image.jpg`
-3) Go to Algolia dashboard for this project - https://www.algolia.com/apps/9SXIDIVU1E/dashboard
+3) Go to Algolia products_index indices for this project - https://www.algolia.com/apps/9SXIDIVU1E/explorer/browse/products_index
 4) Select "Add records", then select "Add manually"
 5) Copy the JSON example below and replace the field values according to the product details:  
    JSON example
@@ -176,14 +185,22 @@ chmod +x ./scripts/deploy.sh
    ```
 6) Click "Save"
 7) Repeat steps 1-6 if you have more products to add, else proceed to next step
-8) Verify changes
+8) Update local product_list.json:
+   ```bash
+   pipenv run python scripts/update_product_list.py
+   ```
+9) Verify changes
    - Run local django server, verify that the new product is added
      ```bash
      python manage.py runserver
      ```
-9)  Save changes and commit/push to Git
+10) Save changes and commit/push to Git
     - Save changes
-    - `git add` the new/updated files
+    - `git add` the new/updated files:
+        ```bash
+        git add catalogue/data/product_list.json
+        git add static/catalogue/<product_category>/<your_new_image>.jpg
+        ```
     - Make a `git commit`
     - `git push`
 11) Deploy to production!
