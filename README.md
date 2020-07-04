@@ -62,6 +62,10 @@ Go to the following link to install Python in your system:
 1) Clone/Download repository source code:  
     Once Python is installed/setup, download/clone this repository to get the source code.
     ```bash
+    ## Go to the folder you where you want to keep the project
+    mkdir scratch
+    cd scratch
+
     ## via ssh key
     git clone git@github.com:zckoh/tf-nglun.git
 
@@ -73,9 +77,17 @@ Go to the following link to install Python in your system:
     Go to project directory, use `pipenv` to install the required packages:
     ```bash
     cd tf-nglun
-    pipenv install -r website/requirements.txt
+    pipenv install django~=3.0.8
+    pipenv shell
+    
+    pip install algoliasearch~=2.3.0
     ```
-    This will generate the `Pipfile` and `Pipfile.lock` files in the project directory
+    This will install the required packages and generate the `Pipfile` and `Pipfile.lock` files in the project directory
+
+    Then save the dependencies list to `website/requirements.txt`:
+    ```bash
+    pip freeze > website/requirements.txt
+    ```
 
 3) Setup `secrets` file:  
     For Django, it requires a DJANGO_SECRET, which can be generated using the following command:
@@ -83,11 +95,13 @@ Go to the following link to install Python in your system:
     python -c 'from django.core.management.utils import get_random_secret_key; print(get_random_secret_key())'
     ```
     Then we need to create a secret file `website/secrets.txt` to keep the secret key:
-    ```
+    ```bash
+    # place the following line in website/secrets.txt
     export DJANGO_SECRET="VALUE OF DJANGO_SECRET"
     ```
     For GAE, we also need to create a secret file `website/secrets.yaml` which will contain the same secret key:
-    ```
+    ```yaml
+    # Add the following line the website/secrets.yaml
     env_variables:
       DJANGO_SECRET: 'VALUE OF DJANGO_SECRET'
     ``` 
@@ -109,17 +123,9 @@ python manage.py runserver
 
 ### To deploy to Production/GAE (Google App Engine):
 ```bash
-## WARNING: Don't forget to update DEBUG value to False in website/settings.py 
 cd website
-
-## Collect all static files to be uploaded to GAE
-python manage.py collectstatic
-
-## Deploy to GAE
-gcloud app deploy
-
-## Once deployed, browse and check the website
-gcloud app browse
+./scripts/deploy.sh
+# Then follow the prompts accordingly
 ```
 
 ### To add new products:
