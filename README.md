@@ -71,7 +71,11 @@ Go to the following link to install Python in your system:
     This will generate the `Pipfile` and `Pipfile.lock` files in the project directory
 
 3) Setup `secrets` file:  
-    For Django, we need to create a secret file `website/django_secret.txt` to keep the secret key:
+    For Django, it requires a DJANGO_SECRET, which can be generated using the following command:
+    ```
+    python -c 'from django.core.management.utils import get_random_secret_key; print(get_random_secret_key())'
+    ```
+    Then we need to create a secret file `website/django_secret.txt` to keep the secret key:
     ```
     export DJANGO_SECRET="VALUE OF DJANGO_SECRET"
     ```
