@@ -174,11 +174,16 @@ gcloud app deploy
 
 ### To add new products:
 #### Adding product(s) to existing product category
-1) Prepare the product image(s) (ideally a .jpg file)
-2) Add the image(s) to correct directory:  `tf-nglun/website/static/catalogue/<product_category>/image.jpg`
-3) Go to Algolia products_index indices for this project - https://www.algolia.com/apps/9SXIDIVU1E/explorer/browse/products_index
-4) Select "Add records", then select "Add manually"
-5) Copy the JSON example below and replace the field values according to the product details:  
+1) First in the project directory,  do a `git pull` to get any new changes:
+   ```bash
+   cd tf-nglun
+   git pull
+   ```
+2) Prepare the product image(s) (ideally a .jpg file)
+3) Add the image(s) to correct directory:  `tf-nglun/website/static/catalogue/<product_category>/image.jpg`
+4) Go to Algolia products_index indices for this project - https://www.algolia.com/apps/9SXIDIVU1E/explorer/browse/products_index
+5) Select "Add records", then select "Add manually"
+6) Copy the JSON example below and replace the field values according to the product details:  
    JSON example
    ```json
     {
@@ -196,19 +201,22 @@ gcloud app deploy
         "url_link": "pens/zebra_airfit.html"
     }
    ```
-6) Click "Save"
-7) Repeat steps 1-6 if you have more products to add, else proceed to next step
-8) Update local product_list.json:
-   ```bash
-   pipenv run python scripts/update_product_list.py
-   ```
-9) Verify changes
+7) Click "Save"
+8) Repeat steps 2-7 if you have more products to add, else proceed to next step
+9)  Update local product_list.json:
+    ```bash
+    pipenv shell 
+    python scripts/update_product_list.py
+    ```
+11) Verify changes
    - Run local django server, verify that the new product is added
      ```bash
      ## NOTE: DON'T FORGET TO SET DEBUG = True in website/settings.py first when testing locally
-     pipenv run python manage.py runserver
+     python manage.py runserver
+
+     ## after testing, quit the server with CONTROL+C
      ```
-10) Save changes and commit/push to Git
+12) Save changes and commit/push to Git
     - Save changes
     - `git add` the new/updated files:
         ```bash
@@ -217,16 +225,21 @@ gcloud app deploy
         ```
     - Make a `git commit`
     - `git push`
-11) Deploy to production!
+13) Deploy to production!
 
 
 #### Adding product(s) of a new product category
-1) Prepare the product image(s) (ideally a .jpg file)
-2) Create a new folder for the new product category: `tf-nglun/website/static/catalogue/<NEW_product_category>/`
-3) Add the image(s) to correct directory:  `tf-nglun/website/static/catalogue/<NEW_product_category>/image.jpg`
-3) Go to Algolia products_index indices for this project - https://www.algolia.com/apps/9SXIDIVU1E/explorer/browse/products_index
-4) Select "Add records", then select "Add manually"
-5) Copy the JSON example below and replace the field values according to the product details:  
+1) First in the project directory,  do a `git pull` to get any new changes:
+   ```bash
+   cd tf-nglun
+   git pull
+   ```
+2) Prepare the product image(s) (ideally a .jpg file)
+3) Create a new folder for the new product category: `tf-nglun/website/static/catalogue/<NEW_product_category>/`
+4) Add the image(s) to correct directory:  `tf-nglun/website/static/catalogue/<NEW_product_category>/image.jpg`
+5) Go to Algolia products_index indices for this project - https://www.algolia.com/apps/9SXIDIVU1E/explorer/browse/products_index
+6) Select "Add records", then select "Add manually"
+7) Copy the JSON example below and replace the field values according to the product details:  
    JSON example
    ```json
     {
@@ -244,25 +257,28 @@ gcloud app deploy
         "url_link": "pens/zebra_airfit.html"
     }
    ```
-6) Click "Save"
-7) Repeat steps 1-6 if you have more products to add, else proceed to next step
-8) Update local product_list.json:
-   ```bash
-   pipenv run python scripts/update_product_list.py
-   ```
-9) Verify changes
+8) Click "Save"
+9) Repeat steps 2-7 if you have more products to add, else proceed to next step
+10) Update local product_list.json:
+    ```bash
+    pipenv shell 
+    python scripts/update_product_list.py
+    ```
+11) Verify changes
    - Run local django server, verify that the new product is added
      ```bash
      ## NOTE: DON'T FORGET TO SET DEBUG = True in website/settings.py first when testing locally
-     pipenv run python manage.py runserver
+     python manage.py runserver
+
+     ## after testing, quit the server with CONTROL+C
      ```
-10) Save changes and commit/push to Git
+12) Save changes and commit/push to Git
     - Save changes
     - `git add` the new/updated files:
         ```bash
         git add catalogue/data/product_list.json
-        git add static/catalogue/<product_category>/<your_new_image>.jpg
+        git add static/catalogue/<NEW_product_category>/<your_new_image>.jpg
         ```
     - Make a `git commit`
     - `git push`
-11) Deploy to production!
+13) Deploy to production!
