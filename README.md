@@ -80,13 +80,13 @@ Go to the following link to install Python in your system:
     pipenv install django~=3.0.8
     pipenv shell
     
-    pip install algoliasearch~=2.3.0
+    pip install algoliasearch~=2.3.0 autopep8~=1.5.3
     ```
     This will install the required packages and generate the `Pipfile` and `Pipfile.lock` files in the project directory
 
     Then run the following command to save the dependencies list to `website/requirements.txt`:
     ```bash
-    pip freeze > website/requirements.txt
+    pipenv run pip freeze > website/requirements.txt
     ```
 
 3) Setup `secrets` file:  
@@ -135,10 +135,11 @@ pipenv shell
 ```bash
 cd website
 source secrets.txt
-python manage.py runserver
+pipenv run python manage.py runserver
 ```
 
 ### To deploy to Production/GAE (Google App Engine):
+Use `deploy.sh` script (recommended):
 ```bash
 cd website
 
@@ -150,10 +151,10 @@ chmod +x ./scripts/deploy.sh
 # Then follow the prompts accordingly
 ```
 
-Manual steps to deploy:
+OR use manual steps to deploy:
 ```bash
 cd tf-nglun/website
-python manage.py collectstatic
+pipenv run python manage.py collectstatic
 
 gcloud app deploy
 ```
@@ -192,7 +193,8 @@ gcloud app deploy
 9) Verify changes
    - Run local django server, verify that the new product is added
      ```bash
-     python manage.py runserver
+     ## NOTE: DON'T FORGET TO SET DEBUG = True in website/settings.py first when testing locally
+     pipenv run python manage.py runserver
      ```
 10) Save changes and commit/push to Git
     - Save changes
@@ -239,7 +241,8 @@ gcloud app deploy
 9) Verify changes
    - Run local django server, verify that the new product is added
      ```bash
-     python manage.py runserver
+     ## NOTE: DON'T FORGET TO SET DEBUG = True in website/settings.py first when testing locally
+     pipenv run python manage.py runserver
      ```
 10) Save changes and commit/push to Git
     - Save changes
