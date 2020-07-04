@@ -10,7 +10,7 @@ cd ${django_root}
 
 # Source the secrets file
 echo "Loading the secrets as environment variables ..."
-source ${django_root}/django_secret.txt
+source ${django_root}/secrets.txt
 if [[ $? -ne 0 ]]; then
     echo "ERROR: Failed to source the secrets file, aborted deployment."
     exit 1

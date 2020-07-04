@@ -131,9 +131,9 @@ dmypy.json
 # Pyre type checker
 .pyre/
 
-# Django secret key
-django_secret.txt
-django_secret.yaml
+# secrets file
+secrets.txt
+secrets.yaml
 
 # Copied staticfiles
 staticfiles/

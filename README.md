@@ -17,16 +17,16 @@ Bootstrap 4.5
 
 #### Install Git
 **Note: You will need this to clone this repository**
-- For Windows Users, download and install from https://gitforwindows.org/
-- For linux Users, the distribution should already come installed with git.
+- For Windows users, download and install from https://gitforwindows.org/
+- For linux users, the distribution should already come installed with git.
 
 #### Install Python (Miniconda/Anaconda)
 Go to the following link to install Python in your system:  
-1) Download installer:  
+1) Download installer (Miniconda only):  
     https://docs.conda.io/en/latest/miniconda.html
 2) Follow installation instructions:  
     https://conda.io/projects/conda/en/latest/user-guide/install/index.html
-3) Once installed, make sure you can use conda/pip in command line:
+3) Once installed, run commands `conda --version` followed by `pip list` to verify installation. You should see something similar to the outputs below:
     ```bash
     # anywhere in command line, to verify installation
     conda --version
@@ -46,20 +46,27 @@ Go to the following link to install Python in your system:
 
 #### Install Google Cloud SDK (required for deploying to GAE)
 - Download/Install from https://cloud.google.com/sdk/install  
-- Follow this quickstart guide: https://cloud.google.com/sdk/docs/quickstart-windows
-  - Create GCP project
-  - Create billing account
+- Follow this quickstart guide: https://cloud.google.com/sdk/docs/quickstart-windows  
+
+  Summary of quickstart guide:  
+  - Create GCP project (skip if already done)
+  - Create billing account (skip if already done)
   - Install the App Engine Extension for Python 3
     ```
     gcloud components install app-engine-python
     ```
-  - Run `gcloud init`, then select the correct project
+  - Run `gcloud init`, then you will be prompted to login to your google cloud account. Click "allow" to login.
+  - Then you will prompted to select your cloud project on the command line.
 
 #### Setup working directory
 1) Clone/Download repository source code:  
     Once Python is installed/setup, download/clone this repository to get the source code.
     ```bash
+    ## via ssh key
     git clone git@github.com:zckoh/tf-nglun.git
+
+    ## via https request (requires password)
+    git clone https://github.com/zckoh/tf-nglun.git
     ```
 
 2) Install Python dependencies:  
@@ -75,11 +82,11 @@ Go to the following link to install Python in your system:
     ```
     python -c 'from django.core.management.utils import get_random_secret_key; print(get_random_secret_key())'
     ```
-    Then we need to create a secret file `website/django_secret.txt` to keep the secret key:
+    Then we need to create a secret file `website/secrets.txt` to keep the secret key:
     ```
     export DJANGO_SECRET="VALUE OF DJANGO_SECRET"
     ```
-    For GAE, we also need to create a secret file `website/django_secret.yaml` which will contain the same secret key:
+    For GAE, we also need to create a secret file `website/secrets.yaml` which will contain the same secret key:
     ```
     env_variables:
       DJANGO_SECRET: 'VALUE OF DJANGO_SECRET'
