@@ -206,5 +206,48 @@ gcloud app deploy
 11) Deploy to production!
 
 
-#### Adding product to new product category
-TODO
+#### Adding product(s) of a new product category
+1) Prepare the product image(s) (ideally a .jpg file)
+2) Create a new folder for the new product category: `tf-nglun/website/static/catalogue/<NEW_product_category>/`
+3) Add the image(s) to correct directory:  `tf-nglun/website/static/catalogue/<NEW_product_category>/image.jpg`
+3) Go to Algolia products_index indices for this project - https://www.algolia.com/apps/9SXIDIVU1E/explorer/browse/products_index
+4) Select "Add records", then select "Add manually"
+5) Copy the JSON example below and replace the field values according to the product details:  
+   JSON example
+   ```json
+    {
+        "product_name": "Zebra Mechanical Pencil, Air Fit S, 0.5mm",
+        "model_no": "MA19",
+        "product_category": "Pens",
+        "belong_to": "pens_catalogue",
+        "product_details": [
+            "Mechanical Pencil, Air fit s",
+            "With silicone grip",
+            "For 0.5mm lead, assorted colors"
+        ],
+        "product_image_path": "catalogue/pens/zebra-airfit.jpg",
+        "url_name": "zebra_airfit",
+        "url_link": "pens/zebra_airfit.html"
+    }
+   ```
+6) Click "Save"
+7) Repeat steps 1-6 if you have more products to add, else proceed to next step
+8) Update local product_list.json:
+   ```bash
+   pipenv run python scripts/update_product_list.py
+   ```
+9) Verify changes
+   - Run local django server, verify that the new product is added
+     ```bash
+     python manage.py runserver
+     ```
+10) Save changes and commit/push to Git
+    - Save changes
+    - `git add` the new/updated files:
+        ```bash
+        git add catalogue/data/product_list.json
+        git add static/catalogue/<product_category>/<your_new_image>.jpg
+        ```
+    - Make a `git commit`
+    - `git push`
+11) Deploy to production!

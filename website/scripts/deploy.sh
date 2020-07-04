@@ -23,15 +23,6 @@ if [[ $? -ne 0 ]]; then
     exit 1
 fi
 
-# Set DEBUG=False in settings.py
-echo "Setting DEBUG = False in settings.py ..."
-debug_line_number=`grep -n "DEBUG" ${django_root}/website/settings.py | cut -d : -f 1`
-sed -i "${debug_line_number}s/.*/DEBUG = False/" ${django_root}/website/settings.py
-if [[ $? -ne 0 ]]; then
-    echo "ERROR: Failed to set DEBUG = False in settings.py, aborted deployment."
-    exit 1
-fi
-
 # Collects the static file
 pipenv run python manage.py collectstatic
 if [[ $? -ne 0 ]]; then
@@ -43,15 +34,6 @@ fi
 gcloud app deploy
 if [[ $? -ne 0 ]]; then
     echo "ERROR: Failed to deploy to GAE, aborted deployment."
-    exit 1
-fi
-
-# Set DEBUG=True in settings.py once finished deploying
-echo "Setting back DEBUG = True in settings.py ..."
-debug_line_number=`grep -n "DEBUG" ${django_root}/website/settings.py | cut -d : -f 1`
-sed -i "${debug_line_number}s/.*/DEBUG = True/" ${django_root}/website/settings.py
-if [[ $? -ne 0 ]]; then
-    echo "WARNING: Failed to set DEBUG = True in settings.py"
     exit 1
 fi
 
