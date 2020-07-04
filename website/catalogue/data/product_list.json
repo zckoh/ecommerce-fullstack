@@ -1,5 +1,19 @@
 [
     {
+        "product_name": "Classeur A4, dos arrondis",
+        "model_no": "CLA4DA",
+        "product_category": "Classeurs",
+        "belong_to": "classeur_catalogue",
+        "product_details": [
+            "Format A4",
+            "Marque Exacompta"
+        ],
+        "product_image_path": "catalogue/classeurs/exacompta_a4.png",
+        "url_name": "exacompta_a4",
+        "url_link": "classeurs/exacompta_a4.html",
+        "objectID": "5056551"
+    },
+    {
         "product_name": "Cahier 17x22, 96pg, Seyes/Gros Carreaux, Couverture Polypro",
         "model_no": "C1722",
         "product_category": "Copybooks",
