@@ -15,7 +15,7 @@ search.addWidgets([
     }),
     instantsearch.widgets.searchBox({
         container: '#search-box',
-        placeholder: 'Search for products',
+        placeholder: 'Rechercher',
     }),
     instantsearch.widgets.refinementList({
         container: '#refinement-list',
@@ -34,7 +34,7 @@ const renderHits = (renderOptions, isFirstRender) => {
     if (hits === undefined || hits.length == 0) {
         if (document.getElementsByClassName("ais-SearchBox-input")[0].value) {
             widgetParams.container.innerHTML = `
-                <p>We didn't find any results for the search <em>"${document.getElementsByClassName("ais-SearchBox-input")[0].value}"</em></p>
+                <p>Nous n'avons trouvé aucun résultat pour la recherche <em>"${document.getElementsByClassName("ais-SearchBox-input")[0].value}"</em></p>
             `;
         }
     } else {
@@ -53,8 +53,8 @@ const renderHits = (renderOptions, isFirstRender) => {
                         <a href="${item.url_link}" class="text-dark">
                             <h5 class="card-title">${item.product_name}</h5>
                         </a>
-                        <p class="card-text">Model: ${item.model_no}</p>
-                        <a href="${item.url_link}" class="btn btn-primary">View</a>
+                        <p class="card-text">Référence: ${item.model_no}</p>
+                        <a href="${item.url_link}" class="btn btn-primary">Voire</a>
                     </div>
                 </div>
             </div>`
