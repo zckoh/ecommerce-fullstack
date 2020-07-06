@@ -13,11 +13,11 @@
 <div class="container flex-md-row mb-4 h-md-250 rounded">
     <div class="mb-2">
         <small>
-            <a class="text-dark" href="{% url 'products' %}">Products</a> / <a class="text-dark" href="{% url 'products' %}{{ category_link }}">{{ product_category }}</a> /
+            <a class="text-dark" href="{% url 'products' %}">Produits</a> / <a class="text-dark" href="{% url 'products' %}{{ category_link }}">{{ product_category }}</a> /
             <a class="text-dark" href="{% url url_name %}">{{ product_name }}</a>
         </small>
     </div>
-    
+
     <div class="row no-gutters">
         <div class="col-md-6 ">
             <img class="img-thumbnail d-block mx-auto" src="{% static product_image_path %}" alt="product_image">
