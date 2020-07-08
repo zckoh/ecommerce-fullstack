@@ -124,8 +124,8 @@
             "Disponible uniquement en incolore"
         ],
         "product_image_path": "products/copybooks/cahier_tp_96p_calligraphe.jpg",
-        "url_name": "24x32_96pg_seyes_calligraphe",
-        "url_link": "cahiers/24x32_96pg_seyes_calligraphe.html",
+        "url_name": "24x32_tp_96pg_seyes_calligraphe",
+        "url_link": "cahiers/24x32_tp_96pg_calligraphe.html",
         "objectID": "5485991"
     },
     {
@@ -141,8 +141,8 @@
             "Disponible uniquement en incolore"
         ],
         "product_image_path": "products/copybooks/cahier_tp_96p_calligraphe.jpg",
-        "url_name": "21x29.7_96pg_seyes_calligraphe",
-        "url_link": "cahiers/21x29.7_96pg_seyes_calligraphe.html",
+        "url_name": "21x29.7_tp_96pg_seyes_calligraphe",
+        "url_link": "cahiers/21x29.7_tp_96pg_calligraphe.html",
         "objectID": "5485941"
     },
     {
@@ -158,8 +158,8 @@
             "Disponible uniquement en incolore"
         ],
         "product_image_path": "products/copybooks/cahier_tp_64p_calligraphe.jpg",
-        "url_name": "21x29.7_64pg_seyes_calligraphe",
-        "url_link": "cahiers/21x29.7_64pg_seyes_calligraphe.html",
+        "url_name": "21x29.7_tp_64pg_seyes_calligraphe",
+        "url_link": "cahiers/21x29.7_tp_64pg_calligraphe.html",
         "objectID": "5485921"
     },
     {
@@ -197,7 +197,7 @@
         "objectID": "5485371"
     },
     {
-        "product_name": "Cahier 17x22 96pg 5x5 Polypro",
+        "product_name": "Cahier 17x22 32/48/96/192pg 5x5 Polypro",
         "model_no": "n/a",
         "product_category": "Cahiers",
         "product_details": [
