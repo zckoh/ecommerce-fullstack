@@ -34,8 +34,8 @@
                 <span class="opening-days-tab">Lundi - Vendredi</span>: 10:00 - 17:30</br>
                 <span class="opening-days-tab">Jeudi</span>: 10:00 - 13:00</br>
                 <span class="opening-days-tab">Samedi</span>: 10:00 - 17:30</br>
-                <span class="opening-days-tab">Dimanche</span>: Closed (except during December)</br>
-                <span class="opening-days-tab">Jours fériés</span>: Closed</br>
+                <span class="opening-days-tab">Dimanche</span>: Fermer (sauf pendant Décembre)</br>
+                <span class="opening-days-tab">Jours fériés</span>: Fermer</br>
             </p>
         </div>
         <div class="col-md-6" id="map"></div>
@@ -52,7 +52,9 @@
                 <div class="row">
                     <div class="col-md-6 pb-2">
                         <label for="{{ form.name.id_for_label }}" class="">Nom</label>
-                        {{ form.name.errors }}
+                        <div class="text-danger" role="alert">
+                            {{ form.name.errors }}
+                        </div>
                         {{ form.name }}
                     </div>
                     <div class="col-md-6">
@@ -61,18 +63,23 @@
                             {{ form.email_address.errors }}
                         </div>
                         {{ form.email_address }}
-                        <small id="emailHelp" class="form-text text-muted">Nous ne divulguerons jamais vos détails</small>
+                        <small id="emailHelp" class="form-text text-muted">Nous ne divulguerons jamais vos
+                            détails</small>
                     </div>
                 </div>
             </div>
             <div class="form-group">
                 <label for="{{ form.subject.id_for_label }}" class="">Sujet</label>
-                {{ form.subject.errors }}
+                <div class="text-danger" role="alert">
+                    {{ form.subject.errors }}
+                </div>
                 {{ form.subject }}
             </div>
             <div class="form-group">
                 <label for="{{ form.message.id_for_label }}">Message</label>
-                {{ form.message.errors }}
+                <div class="text-danger" role="alert">
+                    {{ form.message.errors }}
+                </div>
                 {{ form.message }}
             </div>
             <div class="form-group">
@@ -94,8 +101,12 @@
         var shopLocation = { lat: -20.315215, lng: 57.523019 };
 
         var contentString =
-            '<div >' +
-            '<p><b>T.F. NG LUN</b></p>' +
+            '<div>' +
+            '<p class="font-weight-bold"><b>T.F. NG LUN</b></p>' +
+            '<p class="font-weight-normal">' +
+            'Royal Road, Curepipe, Mauritius</br>' +
+            '<a href="https://www.google.com/maps/place/T.+F.Ng+Lun/@-20.3152917,57.522507,19z/data=!3m1!4b1!4m5!3m4!1s0x217c5c40cd1a17d1:0x676f9ed1b08a923c!8m2!3d-20.315293!4d57.5230542?hl=fr">Voir sur Google Maps</a></p>'
+            '</p>' +
             '</div>';
 
         var infowindow = new google.maps.InfoWindow({
@@ -112,11 +123,11 @@
     }
 </script>
 <script async defer
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBvCy0T58Wbh9_qZ9UBfos3WIMxfJ2JYAY&callback=initMap">
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBvCy0T58Wbh9_qZ9UBfos3WIMxfJ2JYAY&callback=initMap&language=fr&region=MU">
     </script>
 {% endblock %}
 
 {% block javascript_files %}
-<script src="https://www.google.com/recaptcha/api.js"></script>
+<script src="https://www.google.com/recaptcha/api.js?hl=fr"></script>
 <script src="{% static 'contact/js/contact.js' %}"></script>
 {% endblock %}
