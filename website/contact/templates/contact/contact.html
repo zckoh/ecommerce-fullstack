@@ -1,5 +1,6 @@
 {% extends "base.html" %}
 {% load static %}
+
 <head>
     {% block additional_static_files %}
     <link rel="stylesheet" type="text/css" href="{% static 'contact/css/contact.css' %}">
@@ -11,83 +12,82 @@
 </head>
 {% block page_content %}
 <div class="container flex-md-row mb-4 h-md-250 rounded">
-    <!-- <div class="row no-gutters"><div class="page-header">
-        <h1>Nos coordonnées</h1>
-    </div></div> -->
     <div class="row no-gutters pb-4">
         <div class="col-md-6">
-            <div>
-                <p class="h5 text-muted pt-2">
-                    Nos coordonnées
-                </p>
-                <p class="h6">
-                    Succéssion T.F. Ng Lun
-                </p>
-                <p>
-                    <span class="contact-details-tab">Nom</span>: Beryl Lam Ping Fong</br>
-                    <span class="contact-details-tab">Adresse</span>: Royal Road, Curepipe, Mauritius</br>
-                    <span class="contact-details-tab">Téléphone</span>: +230 6762990 / +230 6740039</br>
-                    <span class="contact-details-tab">Adresse e-mail</span>: <a href="mailto:cnglun@intnet.mu">cnglun@intnet.mu</a></br>
-                </p>
-                <p class="h5 text-secondary">
-                    Horaires d'ouverture
-                </p>
-                <p>
-                    <span class="opening-days-tab">Lundi - Vendredi</span>: 10:00 - 17:30</br>
-                    <span class="opening-days-tab">Jeudi</span>: 10:00 - 13:00</br>
-                    <span class="opening-days-tab">Samedi</span>: 10:00 - 17:30</br>
-                    <span class="opening-days-tab">Dimanche</span>: Closed (except during December)</br>
-                    <span class="opening-days-tab">Jours fériés</span>: Closed</br>
-                </p>
-            </div>
+            <p class="h5 text-muted pt-2">
+                Nos coordonnées
+            </p>
+            <p class="h6">
+                Succéssion T.F. Ng Lun
+            </p>
+            <p>
+                <span class="contact-details-tab">Nom</span>: Beryl Lam Ping Fong</br>
+                <span class="contact-details-tab">Adresse</span>: Royal Road, Curepipe, Mauritius</br>
+                <span class="contact-details-tab">Téléphone</span>: +230 6762990 / +230 6740039</br>
+                <span class="contact-details-tab">Adresse e-mail</span>: <a
+                    href="mailto:cnglun@intnet.mu">cnglun@intnet.mu</a></br>
+            </p>
+            <p class="h5 text-secondary">
+                Horaires d'ouverture
+            </p>
+            <p>
+                <span class="opening-days-tab">Lundi - Vendredi</span>: 10:00 - 17:30</br>
+                <span class="opening-days-tab">Jeudi</span>: 10:00 - 13:00</br>
+                <span class="opening-days-tab">Samedi</span>: 10:00 - 17:30</br>
+                <span class="opening-days-tab">Dimanche</span>: Closed (except during December)</br>
+                <span class="opening-days-tab">Jours fériés</span>: Closed</br>
+            </p>
         </div>
         <div class="col-md-6" id="map"></div>
     </div>
-    <p class="h5 text-secondary pt-5">
-        Formulaire de contact
-    </p>
 
-    {{ form.non_field_errors }}
-    <form action="" method="POST">
-        {% csrf_token %}
-        <div class="form-group">
-            <div class="row">
-                <div class="col-md-6 pb-2">
-                    <label for="{{ form.name.id_for_label }}" class="">Nom</label>
-                    {{ form.name.errors }}
-                    {{ form.name }}
-                </div>
-                <div class="col-md-6">
-                    <label for="{{ form.email_address.id_for_label }}" class="">Adresse e-mail</label>
-                    <div class="text-danger" role="alert">
-                        {{ form.email_address.errors }}
+    <div>
+        <p class="h5 text-secondary pt-5">
+            Formulaire de contact
+        </p>
+        {{ form.non_field_errors }}
+        <form action="" method="POST">
+            {% csrf_token %}
+            <div class="form-group">
+                <div class="row">
+                    <div class="col-md-6 pb-2">
+                        <label for="{{ form.name.id_for_label }}" class="">Nom</label>
+                        {{ form.name.errors }}
+                        {{ form.name }}
                     </div>
-                    {{ form.email_address }}
-                    <small id="emailHelp" class="form-text text-muted">Nous ne divulguerons jamais vos détails</small>
+                    <div class="col-md-6">
+                        <label for="{{ form.email_address.id_for_label }}" class="">Adresse e-mail</label>
+                        <div class="text-danger" role="alert">
+                            {{ form.email_address.errors }}
+                        </div>
+                        {{ form.email_address }}
+                        <small id="emailHelp" class="form-text text-muted">Nous ne divulguerons jamais vos détails</small>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="form-group">
-            <label for="{{ form.subject.id_for_label }}" class="">Sujet</label>
-            {{ form.subject.errors }}
-            {{ form.subject }}
-        </div>
-        <div class="form-group">
-            <label for="{{ form.message.id_for_label }}">Message</label>
-            {{ form.message.errors }}
-            {{ form.message }}
-        </div>
-        <div class="form-group">
-            <div class="row">
-                <div class="col-md-6 pb-2">
-                    <div class="g-recaptcha" data-sitekey="6LcsWa4ZAAAAAOdIN7cPMOaCNBUlJAww7EiT92nE" data-callback="recaptchaCallback"></div>
-                </div>
-                <div class="col-md-6 d-flex justify-content-end align-items-end">
-                    <input id="submitBtn" class="btn btn-primary" type="submit" value="Envoyer" disabled>
+            <div class="form-group">
+                <label for="{{ form.subject.id_for_label }}" class="">Sujet</label>
+                {{ form.subject.errors }}
+                {{ form.subject }}
+            </div>
+            <div class="form-group">
+                <label for="{{ form.message.id_for_label }}">Message</label>
+                {{ form.message.errors }}
+                {{ form.message }}
+            </div>
+            <div class="form-group">
+                <div class="row">
+                    <div class="col-md-6 pb-2">
+                        <div class="g-recaptcha" data-sitekey="6LcsWa4ZAAAAAOdIN7cPMOaCNBUlJAww7EiT92nE"
+                            data-callback="recaptchaCallback"></div>
+                    </div>
+                    <div class="col-md-6 d-flex justify-content-end align-items-end">
+                        <input id="submitBtn" class="btn btn-primary" type="submit" value="Envoyer" disabled>
+                    </div>
                 </div>
             </div>
-        </div>
-    </form>
+        </form>
+    </div>
 </div>
 <script>
     function initMap() {
