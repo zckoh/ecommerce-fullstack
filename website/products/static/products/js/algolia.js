@@ -54,7 +54,7 @@ const renderHits = (renderOptions, isFirstRender) => {
                             <h5 class="card-title">${item.product_name}</h5>
                         </a>
                         <p class="card-text">Référence: ${item.model_no}</p>
-                        <a href="${item.url_link}" class="btn btn-primary">Voire</a>
+                        <a href="${item.url_link}" class="btn btn-primary">Voir</a>
                     </div>
                 </div>
             </div>`

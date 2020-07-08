@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+{% spaceless %}
+    <url>
+        <loc>https://www.tfnglun.com/</loc>
+    </url>
+    <url>
+        <loc>https://www.tfnglun.com/products/</loc>
+    </url>
+    <url>
+        <loc>https://www.tfnglun.com/contact/</loc>
+    </url>
+    <url>
+        <loc>https://www.tfnglun.com/contact/thanks</loc>
+    </url>
+
+{% for product in products %}
+    <url>
+        <loc>https://www.tfnglun.com/products/{{ product.url_link }}</loc>
+    </url>
+{% endfor %}
+{% endspaceless %}
+
+</urlset> 

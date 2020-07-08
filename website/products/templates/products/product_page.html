@@ -11,6 +11,7 @@
 </head>
 {% block page_content %}
 <div class="container flex-md-row mb-4 h-md-250 rounded">
+    <h1 class="d-none">{{ product_name }}</h1>
     <div class="mb-2">
         <small>
             <a class="text-dark" href="{% url 'products' %}">Produits</a> / <a class="text-dark" href="{% url 'products' %}{{ category_link }}">{{ product_category }}</a> /
@@ -20,7 +21,7 @@
 
     <div class="row no-gutters">
         <div class="col-md-6 ">
-            <img class="img-thumbnail d-block mx-auto" src="{% static product_image_path %}" alt="product_image">
+            <img class="img-thumbnail d-block mx-auto" src="{% static product_image_path %}" alt="{{ product_name }}">
         </div>
         <div class="col-md-6">
             <div class="card-body">

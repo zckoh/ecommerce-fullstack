@@ -8,6 +8,7 @@ Django 3.0.8
 Google Maps API  
 Google App Engine  
 Algolia - InstantSearch.js  
+Mailjet Rest API  
 Bootstrap 4.5
 
 
@@ -80,7 +81,7 @@ Go to the following link to install Python in your system:
     pipenv install django~=3.0.8
     pipenv shell
     
-    pip install algoliasearch~=2.3.0 autopep8~=1.5.3
+    pip install algoliasearch~=2.3.0 autopep8~=1.5.3 mailjet-rest~=1.3.3
     ```
     This will install the required packages and generate the `Pipfile` and `Pipfile.lock` files in the project directory
 
@@ -180,7 +181,7 @@ gcloud app deploy
    git pull
    ```
 2) Prepare the product image(s) (ideally a .jpg file)
-3) Add the image(s) to correct directory:  `tf-nglun/website/static/catalogue/<product_category>/image.jpg`
+3) Add the image(s) to correct directory:  `tf-nglun/website/static/products/<product_category>/image.jpg`
 4) Go to Algolia products_index indices for this project - https://www.algolia.com/apps/9SXIDIVU1E/explorer/browse/products_index
 5) Select "Add records", then select "Add manually"
 6) Copy the JSON example below and replace the field values according to the product details:  
@@ -190,13 +191,12 @@ gcloud app deploy
         "product_name": "Zebra Mechanical Pencil, Air Fit S, 0.5mm",
         "model_no": "MA19",
         "product_category": "Pens",
-        "belong_to": "pens_catalogue",
         "product_details": [
             "Mechanical Pencil, Air fit s",
             "With silicone grip",
             "For 0.5mm lead, assorted colors"
         ],
-        "product_image_path": "catalogue/pens/zebra-airfit.jpg",
+        "product_image_path": "products/pens/zebra-airfit.jpg",
         "url_name": "zebra_airfit",
         "url_link": "pens/zebra_airfit.html"
     }
@@ -220,8 +220,8 @@ gcloud app deploy
     - Save changes
     - `git add` the new/updated files:
         ```bash
-        git add catalogue/data/product_list.json
-        git add static/catalogue/<product_category>/<your_new_image>.jpg
+        git add products/data/product_list.json
+        git add static/products/<product_category>/<your_new_image>.jpg
         ```
     - Make a `git commit`
     - `git push`
@@ -235,8 +235,8 @@ gcloud app deploy
    git pull
    ```
 2) Prepare the product image(s) (ideally a .jpg file)
-3) Create a new folder for the new product category: `tf-nglun/website/static/catalogue/<NEW_product_category>/`
-4) Add the image(s) to correct directory:  `tf-nglun/website/static/catalogue/<NEW_product_category>/image.jpg`
+3) Create a new folder for the new product category: `tf-nglun/website/static/products/<NEW_product_category>/`
+4) Add the image(s) to correct directory:  `tf-nglun/website/static/products/<NEW_product_category>/image.jpg`
 5) Go to Algolia products_index indices for this project - https://www.algolia.com/apps/9SXIDIVU1E/explorer/browse/products_index
 6) Select "Add records", then select "Add manually"
 7) Copy the JSON example below and replace the field values according to the product details:  
@@ -246,13 +246,12 @@ gcloud app deploy
         "product_name": "Zebra Mechanical Pencil, Air Fit S, 0.5mm",
         "model_no": "MA19",
         "product_category": "Pens",
-        "belong_to": "pens_catalogue",
         "product_details": [
             "Mechanical Pencil, Air fit s",
             "With silicone grip",
             "For 0.5mm lead, assorted colors"
         ],
-        "product_image_path": "catalogue/pens/zebra-airfit.jpg",
+        "product_image_path": "products/pens/zebra-airfit.jpg",
         "url_name": "zebra_airfit",
         "url_link": "pens/zebra_airfit.html"
     }
@@ -276,8 +275,8 @@ gcloud app deploy
     - Save changes
     - `git add` the new/updated files:
         ```bash
-        git add catalogue/data/product_list.json
-        git add static/catalogue/<NEW_product_category>/<your_new_image>.jpg
+        git add products/data/product_list.json
+        git add static/products/<NEW_product_category>/<your_new_image>.jpg
         ```
     - Make a `git commit`
     - `git push`

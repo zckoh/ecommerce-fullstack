@@ -15,10 +15,22 @@ Including another URLconf
 """
 # from django.contrib import admin
 from django.urls import path, include
+from django.views.generic.base import TemplateView
+from products import models
+
 
 urlpatterns = [
     path('', include('homepage.urls')),
     path('contact/', include('contact.urls')),
-    # path('about/', include('about.urls')),
     path('products/', include('products.urls')),
+    path('robots.txt', TemplateView.as_view(
+        template_name="robots.txt", 
+        content_type="text/plain")
+    ),
+    path('sitemap.xml', TemplateView.as_view(
+        template_name="sitemap.xml", 
+        content_type="application/xml"), 
+        {'products': models.get_product_list()}
+    )
+    # path('about/', include('about.urls')),
 ]

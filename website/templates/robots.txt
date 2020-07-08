@@ -1,0 +1,6 @@
+# robots.txt for http://www.tfnglun.com/
+
+User-agent: *
+Disallow:
+
+Sitemap: https://www.tfnglun.com/sitemap.xml
