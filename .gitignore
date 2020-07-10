@@ -141,3 +141,6 @@ staticfiles/
 # Pipenv files
 Pipfile
 Pipfile.lock
+
+# macOS files
+.DS_STORE
