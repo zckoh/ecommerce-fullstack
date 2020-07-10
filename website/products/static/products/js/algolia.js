@@ -46,8 +46,8 @@ const renderHits = (renderOptions, isFirstRender) => {
             `<div class="col-md-4">
                 <div class="card mb-4 box-shadow">
                     <a href="${item.url_link}">
-                      <img class="card-img-top product-thumbnail" src="/static/${item.product_image_path}"
-                          alt="${item.product_image_path}">
+                      <img class="card-img-top product-thumbnail" src="/static/${item.main_product_image}"
+                          alt="${item.main_product_image}">
                     </a>
                     <div class="card-body">
                         <a href="${item.url_link}" class="text-dark">

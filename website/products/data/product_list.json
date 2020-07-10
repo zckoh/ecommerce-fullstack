@@ -8,7 +8,8 @@
             "Marque BIC Velleda",
             "Dispobible en plusieurs couleurs"
         ],
-        "product_image_path": "products/stationeries/ardoise_velleda.jpg",
+        "main_product_image": "products/stationeries/ardoise_velleda.jpg",
+        "additional_images": [],
         "url_name": "ardoise_velleda",
         "url_link": "papeterie/ardoise_velleda.html",
         "objectID": "5487341"
@@ -25,7 +26,8 @@
             "Marque Calligraphe",
             "Dispobible uniquement en incolore"
         ],
-        "product_image_path": "products/copybooks/repertoire_calligraphe.jpg",
+        "main_product_image": "products/copybooks/repertoire_calligraphe.jpg",
+        "additional_images": [],
         "url_name": "repertoire_96p_calligraphe",
         "url_link": "cahiers/repertoire_96p_calligraphe.html",
         "objectID": "5487001"
@@ -41,7 +43,8 @@
             "Perfor\u00e9es",
             "Marque Calligraphe"
         ],
-        "product_image_path": "products/papiers/copies_doubles_5x5.jpg",
+        "main_product_image": "products/papiers/copies_doubles_5x5.jpg",
+        "additional_images": [],
         "url_name": "copies_doubles_5x5_200p",
         "url_link": "papiers/copies_doubles_5x5_200p.html",
         "objectID": "5486721"
@@ -57,7 +60,8 @@
             "Perfor\u00e9es",
             "Marque Calligraphe"
         ],
-        "product_image_path": "products/papiers/feuilles_mobiles_5x5.jpeg",
+        "main_product_image": "products/papiers/feuilles_mobiles_5x5.jpeg",
+        "additional_images": [],
         "url_name": "feuilles_mobiles_5x5_200p",
         "url_link": "papiers/feuilles_mobiles_5x5_200p.html",
         "objectID": "5486671"
@@ -73,7 +77,8 @@
             "Perfor\u00e9es",
             "Marque Calligraphe"
         ],
-        "product_image_path": "products/papiers/copies_doubles_seyes.jpg",
+        "main_product_image": "products/papiers/copies_doubles_seyes.jpg",
+        "additional_images": [],
         "url_name": "copies_doubles_seyes_200p",
         "url_link": "papiers/copies_doubles_seyes_200p.html",
         "objectID": "5486531"
@@ -89,7 +94,8 @@
             "Perfor\u00e9es",
             "Marque Calligraphe"
         ],
-        "product_image_path": "products/papiers/feuilles_mobiles_seyes.jpg",
+        "main_product_image": "products/papiers/feuilles_mobiles_seyes.jpg",
+        "additional_images": [],
         "url_name": "feuilles_mobiles_seyes_200p",
         "url_link": "papiers/feuilles_mobiles_seyes_200p.html",
         "objectID": "5486451"
@@ -106,7 +112,8 @@
             "Marque Calligraphe",
             "Disponible en plusieurs couleurs"
         ],
-        "product_image_path": "products/copybooks/cahier_de_textes_spirales.jpg",
+        "main_product_image": "products/copybooks/cahier_de_textes_spirales.jpg",
+        "additional_images": [],
         "url_name": "cahier_de_textes_148pg_calligraphe",
         "url_link": "cahiers/cahier_de_textes_148pg_calligraphe.html",
         "objectID": "5486151"
@@ -123,7 +130,8 @@
             "Marque Calligraphe",
             "Disponible uniquement en incolore"
         ],
-        "product_image_path": "products/copybooks/cahier_tp_96p_calligraphe.jpg",
+        "main_product_image": "products/copybooks/cahier_tp_96p_calligraphe.jpg",
+        "additional_images": [],
         "url_name": "24x32_tp_96pg_seyes_calligraphe",
         "url_link": "cahiers/24x32_tp_96pg_calligraphe.html",
         "objectID": "5485991"
@@ -140,7 +148,8 @@
             "Marque Calligraphe",
             "Disponible uniquement en incolore"
         ],
-        "product_image_path": "products/copybooks/cahier_tp_96p_calligraphe.jpg",
+        "main_product_image": "products/copybooks/cahier_tp_96p_calligraphe.jpg",
+        "additional_images": [],
         "url_name": "21x29.7_tp_96pg_seyes_calligraphe",
         "url_link": "cahiers/21x29.7_tp_96pg_calligraphe.html",
         "objectID": "5485941"
@@ -157,7 +166,8 @@
             "Marque Calligraphe",
             "Disponible uniquement en incolore"
         ],
-        "product_image_path": "products/copybooks/cahier_tp_64p_calligraphe.jpg",
+        "main_product_image": "products/copybooks/cahier_tp_64p_calligraphe.jpg",
+        "additional_images": [],
         "url_name": "21x29.7_tp_64pg_seyes_calligraphe",
         "url_link": "cahiers/21x29.7_tp_64pg_calligraphe.html",
         "objectID": "5485921"
@@ -174,7 +184,8 @@
             "Marque Calligraphe",
             "Disponible en plusieurs couleurs"
         ],
-        "product_image_path": "products/copybooks/cahier_5x5_calligraphe_3.jpg",
+        "main_product_image": "products/copybooks/cahier_5x5_calligraphe_3.jpg",
+        "additional_images": [],
         "url_name": "24x32_96pg_5x5_calligraphe",
         "url_link": "cahiers/24x32_96pg_5x5_calligraphe.html",
         "objectID": "5485421"
@@ -191,7 +202,8 @@
             "Marque Calligraphe",
             "Disponible en plusieurs couleurs"
         ],
-        "product_image_path": "products/copybooks/cahier_5x5_calligraphe_2.jpeg",
+        "main_product_image": "products/copybooks/cahier_5x5_calligraphe_2.jpeg",
+        "additional_images": [],
         "url_name": "21x29.7_96pg_5x5_calligraphe",
         "url_link": "cahiers/21x29.7_96pg_5x5_calligraphe.html",
         "objectID": "5485371"
@@ -208,7 +220,8 @@
             "Marque Calligraphe",
             "Disponible en plusieurs couleurs"
         ],
-        "product_image_path": "products/copybooks/cahier_5x5_calligraphe.jpg",
+        "main_product_image": "products/copybooks/cahier_5x5_calligraphe.jpg",
+        "additional_images": [],
         "url_name": "17x22_96pg_5x5_calligraphe",
         "url_link": "cahiers/17x22_96pg_5x5_calligraphe.html",
         "objectID": "5485311"
@@ -225,7 +238,8 @@
             "Marque Calligraphe",
             "Disponible en plusieurs couleurs"
         ],
-        "product_image_path": "products/copybooks/cahier_seyes_calligraphe_3.jpg",
+        "main_product_image": "products/copybooks/cahier_seyes_calligraphe_3.jpg",
+        "additional_images": [],
         "url_name": "24x32_96pg_seyes_calligraphe",
         "url_link": "cahiers/24x32_96pg_seyes_calligraphe.html",
         "objectID": "5484681"
@@ -242,7 +256,8 @@
             "Marque Calligraphe",
             "Disponible en plusieurs couleurs"
         ],
-        "product_image_path": "products/copybooks/cahier_seyes_calligraphe_2.png",
+        "main_product_image": "products/copybooks/cahier_seyes_calligraphe_2.png",
+        "additional_images": [],
         "url_name": "21x29.7_96pg_seyes_calligraphe",
         "url_link": "cahiers/21x29.7_96pg_seyes_calligraphe.html",
         "objectID": "5484541"
@@ -259,7 +274,8 @@
             "Marque Calligraphe",
             "Disponible en plusieurs couleurs"
         ],
-        "product_image_path": "products/copybooks/cahier_seyes_calligraphe.jpg",
+        "main_product_image": "products/copybooks/cahier_seyes_calligraphe.jpg",
+        "additional_images": [],
         "url_name": "17x22_96pg_seyes_calligraphe",
         "url_link": "cahiers/17x22_96pg_seyes_calligraphe.html",
         "objectID": "5484151"
@@ -272,7 +288,8 @@
             "Format A4",
             "Marque Exacompta"
         ],
-        "product_image_path": "products/classeurs/exacompta_a4.png",
+        "main_product_image": "products/classeurs/exacompta_a4.png",
+        "additional_images": [],
         "url_name": "exacompta_a4",
         "url_link": "classeurs/exacompta_a4.html",
         "objectID": "5056551"
@@ -286,7 +303,8 @@
             "With silicone grip",
             "For 0.5mm lead, assorted colors"
         ],
-        "product_image_path": "products/pens/zebra-airfit.jpg",
+        "main_product_image": "products/pens/zebra-airfit.jpg",
+        "additional_images": [],
         "url_name": "zebra_airfit",
         "url_link": "pens/zebra_airfit.html",
         "objectID": "504835001"
@@ -300,7 +318,8 @@
             "Set of 12 assorted contains one of each colour available.",
             "Refillable with LR7 refill."
         ],
-        "product_image_path": "products/pens/pentel-energel-x.jpg",
+        "main_product_image": "products/pens/pentel-energel-x.jpg",
+        "additional_images": [],
         "url_name": "pentel_energel_x",
         "url_link": "pens/pentel_energel_x.html",
         "objectID": "504834001"
@@ -314,7 +333,8 @@
             "Refillable Using BLS-G2-5 (1 Piece Per Pack)",
             "Pack of 12"
         ],
-        "product_image_path": "products/pens/pilot-g2-black.jpg",
+        "main_product_image": "products/pens/pilot-g2-black.jpg",
+        "additional_images": [],
         "url_name": "pilot_g2_black",
         "url_link": "pens/pilot_g2_black.html",
         "objectID": "504833001"
@@ -328,7 +348,8 @@
             "This box of 20 black ballpoints is great for many sessions of taking notes and drawing",
             "These BIC Cristal Orange Original Fine ballpoint pens are made to last with enough ink to write for an average of 3 - 5 km"
         ],
-        "product_image_path": "products/pens/bic-orange-ballpoint.jpg",
+        "main_product_image": "products/pens/bic-orange-ballpoint.jpg",
+        "additional_images": [],
         "url_name": "pens_bic_ballpoint",
         "url_link": "pens/pens_bic_ballpoint.html",
         "objectID": "5048321"
