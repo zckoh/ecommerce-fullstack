@@ -37,4 +37,7 @@ if [[ $? -ne 0 ]]; then
     exit 1
 fi
 
+${django_root}/scripts/remove_old_versions.sh
+
+
 exit 0
