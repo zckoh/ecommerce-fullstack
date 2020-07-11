@@ -39,6 +39,12 @@ footer{
     /* font-family: Impact, Charcoal, sans-serif; */
     font-family: "Trebuchet MS", Helvetica, sans-serif;
     font-size: 2.25rem;
+    text-decoration: none !important;
+    color: black !important;
+}
+
+.base-header-logo:hover {
+    color: black;
 }
 
 h1, h2, h3, h4, h5, h6 {
