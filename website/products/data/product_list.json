@@ -1,8 +1,96 @@
 [
     {
+        "product_name": "Calculatrice Casio FX 35 + E",
+        "model_no": "n/a",
+        "product_category": "Calculatrices",
+        "product_details": [
+            "Mod\u00e8le FX 35 + E",
+            "Marque Casio"
+        ],
+        "main_product_image": "products/calculatrices/casio_graphique_35plus_e.jpg",
+        "additional_images": [],
+        "url_name": "calculatrice_casio_graphique_35plus_e",
+        "url_link": "papeterie/calculatrice_casio_graphique_35plus_e.html",
+        "objectID": "5651891"
+    },
+    {
+        "product_name": "Calculatrice Casio FX 350 ES Plus",
+        "model_no": "n/a",
+        "product_category": "Calculatrices",
+        "product_details": [
+            "Mod\u00e8le FX 350 ES Plus",
+            "Marque Casio"
+        ],
+        "main_product_image": "products/calculatrices/casio_fx350_es_plus.jpg",
+        "additional_images": [],
+        "url_name": "calculatrice_casio_fx350_es_plus",
+        "url_link": "papeterie/calculatrice_casio_fx350_es_plus.html",
+        "objectID": "5651851"
+    },
+    {
+        "product_name": "Compas individuel - Maped",
+        "model_no": "n/a",
+        "product_category": "Divers",
+        "product_details": [
+            "Compas individuel",
+            "Marque Maped"
+        ],
+        "main_product_image": "products/stationeries/compas_maped.jpg",
+        "additional_images": [],
+        "url_name": "compas_individuel_maped",
+        "url_link": "papeterie/compas_individuel_maped.html",
+        "objectID": "5651241"
+    },
+    {
+        "product_name": "Bo\u00eete de g\u00e9om\u00e9trie - Maped",
+        "model_no": "n/a",
+        "product_category": "Divers",
+        "product_details": [
+            "Bo\u00eete de g\u00e9om\u00e9trie",
+            "Marque Maped"
+        ],
+        "main_product_image": "products/stationeries/bte_geo_maped.jpg",
+        "additional_images": [],
+        "url_name": "bte_geo_maped",
+        "url_link": "papeterie/bte_geo_maped.html",
+        "objectID": "5651221"
+    },
+    {
+        "product_name": "Bo\u00eete de g\u00e9om\u00e9trie - Oxford bleu",
+        "model_no": "n/a",
+        "product_category": "Divers",
+        "product_details": [
+            "Bo\u00eete de g\u00e9om\u00e9trie",
+            "Marque Oxford bleu"
+        ],
+        "main_product_image": "products/stationeries/bte_geo_oxford_bleu.jpg",
+        "additional_images": [],
+        "url_name": "bte_geo_oxford_bleu",
+        "url_link": "papeterie/bte_geo_oxford_bleu.html",
+        "objectID": "5651061"
+    },
+    {
+        "product_name": "Cahier 17x22 Travaux Pratiques 64pg Polypro",
+        "model_no": "n/a",
+        "product_category": "Cahiers",
+        "product_details": [
+            "Format 17x22",
+            "64 pages",
+            "Travaux Pratiques",
+            "Couverture Polypro",
+            "Marque Calligraphe",
+            "Disponible uniquement en incolore"
+        ],
+        "main_product_image": "products/copybooks/cahier_tp_64p_calligraphe_pp.jpg",
+        "additional_images": [],
+        "url_name": "17x22_tp_64pg_seyes_calligraphe",
+        "url_link": "cahiers/17x22_tp_64pg_calligraphe.html",
+        "objectID": "5650201"
+    },
+    {
         "product_name": "Ardoise blanche effa\u00e7able \u00e0 sec BIC Velleda",
         "model_no": "n/a",
-        "product_category": "Pap\u00eaterie",
+        "product_category": "Divers",
         "product_details": [
             "Dimensions d'environ 20x31cm",
             "Marque BIC Velleda",
@@ -155,16 +243,16 @@
         "objectID": "5485941"
     },
     {
-        "product_name": "Cahier 21x29.7 Travaux Pratiques 64pg Polypro",
+        "product_name": "Cahier 21x29.7 Travaux Pratiques 64pg Cartonn\u00e9",
         "model_no": "n/a",
         "product_category": "Cahiers",
         "product_details": [
             "Format 21x29.6/A4",
             "64 pages",
             "Travaux Pratiques",
-            "Couverture Polypro",
+            "Couverture Cartonn\u00e9",
             "Marque Calligraphe",
-            "Disponible uniquement en incolore"
+            "Disponible en plusieurs couleurs"
         ],
         "main_product_image": "products/copybooks/cahier_tp_64p_calligraphe.jpg",
         "additional_images": [],
@@ -209,7 +297,7 @@
         "objectID": "5485371"
     },
     {
-        "product_name": "Cahier 17x22 32/48/96/192pg 5x5 Polypro",
+        "product_name": "Cahier 17x22 96pages 5x5 Polypro",
         "model_no": "n/a",
         "product_category": "Cahiers",
         "product_details": [
@@ -353,5 +441,19 @@
         "url_name": "pens_bic_ballpoint",
         "url_link": "pens/pens_bic_ballpoint.html",
         "objectID": "5048321"
+    },
+    {
+        "product_name": "Calculatrice Casio FX 92",
+        "model_no": "n/a",
+        "product_category": "Calculatrices",
+        "product_details": [
+            "Mod\u00e8le FX 92",
+            "Marque Casio"
+        ],
+        "main_product_image": "products/calculatrices/casio_fx92.jpg",
+        "additional_images": [],
+        "url_name": "calculatrice_casio_fx_92",
+        "url_link": "papeterie/calculatrice_casio_fx_92.html",
+        "objectID": "2163570"
     }
 ]
