@@ -1,75 +1,5 @@
 [
     {
-        "product_name": "Calculatrice Casio FX 35 + E",
-        "model_no": "n/a",
-        "product_category": "Calculatrices",
-        "product_details": [
-            "Mod\u00e8le FX 35 + E",
-            "Marque Casio"
-        ],
-        "main_product_image": "products/calculatrices/casio_graphique_35plus_e.jpg",
-        "additional_images": [],
-        "url_name": "calculatrice_casio_graphique_35plus_e",
-        "url_link": "papeterie/calculatrice_casio_graphique_35plus_e.html",
-        "objectID": "5651891"
-    },
-    {
-        "product_name": "Calculatrice Casio FX 350 ES Plus",
-        "model_no": "n/a",
-        "product_category": "Calculatrices",
-        "product_details": [
-            "Mod\u00e8le FX 350 ES Plus",
-            "Marque Casio"
-        ],
-        "main_product_image": "products/calculatrices/casio_fx350_es_plus.jpg",
-        "additional_images": [],
-        "url_name": "calculatrice_casio_fx350_es_plus",
-        "url_link": "papeterie/calculatrice_casio_fx350_es_plus.html",
-        "objectID": "5651851"
-    },
-    {
-        "product_name": "Compas individuel - Maped",
-        "model_no": "n/a",
-        "product_category": "Divers",
-        "product_details": [
-            "Compas individuel",
-            "Marque Maped"
-        ],
-        "main_product_image": "products/stationeries/compas_maped.jpg",
-        "additional_images": [],
-        "url_name": "compas_individuel_maped",
-        "url_link": "papeterie/compas_individuel_maped.html",
-        "objectID": "5651241"
-    },
-    {
-        "product_name": "Bo\u00eete de g\u00e9om\u00e9trie - Maped",
-        "model_no": "n/a",
-        "product_category": "Divers",
-        "product_details": [
-            "Bo\u00eete de g\u00e9om\u00e9trie",
-            "Marque Maped"
-        ],
-        "main_product_image": "products/stationeries/bte_geo_maped.jpg",
-        "additional_images": [],
-        "url_name": "bte_geo_maped",
-        "url_link": "papeterie/bte_geo_maped.html",
-        "objectID": "5651221"
-    },
-    {
-        "product_name": "Bo\u00eete de g\u00e9om\u00e9trie - Oxford bleu",
-        "model_no": "n/a",
-        "product_category": "Divers",
-        "product_details": [
-            "Bo\u00eete de g\u00e9om\u00e9trie",
-            "Marque Oxford bleu"
-        ],
-        "main_product_image": "products/stationeries/bte_geo_oxford_bleu.jpg",
-        "additional_images": [],
-        "url_name": "bte_geo_oxford_bleu",
-        "url_link": "papeterie/bte_geo_oxford_bleu.html",
-        "objectID": "5651061"
-    },
-    {
         "product_name": "Cahier 17x22 Travaux Pratiques 64pg Polypro",
         "model_no": "n/a",
         "product_category": "Cahiers",
@@ -88,21 +18,6 @@
         "objectID": "5650201"
     },
     {
-        "product_name": "Ardoise blanche effa\u00e7able \u00e0 sec BIC Velleda",
-        "model_no": "n/a",
-        "product_category": "Divers",
-        "product_details": [
-            "Dimensions d'environ 20x31cm",
-            "Marque BIC Velleda",
-            "Dispobible en plusieurs couleurs"
-        ],
-        "main_product_image": "products/stationeries/ardoise_velleda.jpg",
-        "additional_images": [],
-        "url_name": "ardoise_velleda",
-        "url_link": "papeterie/ardoise_velleda.html",
-        "objectID": "5487341"
-    },
-    {
         "product_name": "R\u00e9pertoire piqu\u00e9 17x22 96p 5x5 Polypro",
         "model_no": "n/a",
         "product_category": "Cahiers",
@@ -119,74 +34,6 @@
         "url_name": "repertoire_96p_calligraphe",
         "url_link": "cahiers/repertoire_96p_calligraphe.html",
         "objectID": "5487001"
-    },
-    {
-        "product_name": "Copies doubles perfor\u00e9es 21x29.7 5x5 200p",
-        "model_no": "n/a",
-        "product_category": "Papiers",
-        "product_details": [
-            "Format 21x29.7/A4",
-            "5x5/Petit carreaux",
-            "200 pages/ 100 feuilles",
-            "Perfor\u00e9es",
-            "Marque Calligraphe"
-        ],
-        "main_product_image": "products/papiers/copies_doubles_5x5.jpg",
-        "additional_images": [],
-        "url_name": "copies_doubles_5x5_200p",
-        "url_link": "papiers/copies_doubles_5x5_200p.html",
-        "objectID": "5486721"
-    },
-    {
-        "product_name": "Feuilles mobiles perfor\u00e9es 21x29.7 5x5 200p",
-        "model_no": "n/a",
-        "product_category": "Papiers",
-        "product_details": [
-            "Format 21x29.7/A4",
-            "5x5/Petit carreaux",
-            "200 pages/ 100 feuilles",
-            "Perfor\u00e9es",
-            "Marque Calligraphe"
-        ],
-        "main_product_image": "products/papiers/feuilles_mobiles_5x5.jpeg",
-        "additional_images": [],
-        "url_name": "feuilles_mobiles_5x5_200p",
-        "url_link": "papiers/feuilles_mobiles_5x5_200p.html",
-        "objectID": "5486671"
-    },
-    {
-        "product_name": "Copies doubles perfor\u00e9es 21x29.7 S\u00e9y\u00e8s 200p",
-        "model_no": "n/a",
-        "product_category": "Papiers",
-        "product_details": [
-            "Format 21x29.7/A4",
-            "S\u00e9y\u00e8s/Grand carreaux",
-            "200 pages/ 100 feuilles",
-            "Perfor\u00e9es",
-            "Marque Calligraphe"
-        ],
-        "main_product_image": "products/papiers/copies_doubles_seyes.jpg",
-        "additional_images": [],
-        "url_name": "copies_doubles_seyes_200p",
-        "url_link": "papiers/copies_doubles_seyes_200p.html",
-        "objectID": "5486531"
-    },
-    {
-        "product_name": "Feuilles mobiles perfor\u00e9es 21x29.7 S\u00e9y\u00e8s 200p",
-        "model_no": "n/a",
-        "product_category": "Papiers",
-        "product_details": [
-            "Format 21x29.7/A4",
-            "S\u00e9y\u00e8s/Grand carreaux",
-            "200 pages/ 100 feuilles",
-            "Perfor\u00e9es",
-            "Marque Calligraphe"
-        ],
-        "main_product_image": "products/papiers/feuilles_mobiles_seyes.jpg",
-        "additional_images": [],
-        "url_name": "feuilles_mobiles_seyes_200p",
-        "url_link": "papiers/feuilles_mobiles_seyes_200p.html",
-        "objectID": "5486451"
     },
     {
         "product_name": "Cahier de textes spirales 148pg Polypro",
@@ -369,6 +216,48 @@
         "objectID": "5484151"
     },
     {
+        "product_name": "Calculatrice Casio FX 35 + E",
+        "model_no": "n/a",
+        "product_category": "Calculatrices",
+        "product_details": [
+            "Mod\u00e8le FX 35 + E",
+            "Marque Casio"
+        ],
+        "main_product_image": "products/calculatrices/casio_graphique_35plus_e.jpg",
+        "additional_images": [],
+        "url_name": "calculatrice_casio_graphique_35plus_e",
+        "url_link": "papeterie/calculatrice_casio_graphique_35plus_e.html",
+        "objectID": "5651891"
+    },
+    {
+        "product_name": "Calculatrice Casio FX 350 ES Plus",
+        "model_no": "n/a",
+        "product_category": "Calculatrices",
+        "product_details": [
+            "Mod\u00e8le FX 350 ES Plus",
+            "Marque Casio"
+        ],
+        "main_product_image": "products/calculatrices/casio_fx350_es_plus.jpg",
+        "additional_images": [],
+        "url_name": "calculatrice_casio_fx350_es_plus",
+        "url_link": "papeterie/calculatrice_casio_fx350_es_plus.html",
+        "objectID": "5651851"
+    },
+    {
+        "product_name": "Calculatrice Casio FX 92",
+        "model_no": "n/a",
+        "product_category": "Calculatrices",
+        "product_details": [
+            "Mod\u00e8le FX 92",
+            "Marque Casio"
+        ],
+        "main_product_image": "products/calculatrices/casio_fx92.jpg",
+        "additional_images": [],
+        "url_name": "calculatrice_casio_fx_92",
+        "url_link": "papeterie/calculatrice_casio_fx_92.html",
+        "objectID": "2163570"
+    },
+    {
         "product_name": "Classeur A4, dos arrondis",
         "model_no": "CLA4DA",
         "product_category": "Classeurs",
@@ -381,6 +270,131 @@
         "url_name": "exacompta_a4",
         "url_link": "classeurs/exacompta_a4.html",
         "objectID": "5056551"
+    },
+    {
+        "product_name": "Compas individuel - Maped",
+        "model_no": "n/a",
+        "product_category": "Divers",
+        "product_details": [
+            "Compas individuel",
+            "Marque Maped"
+        ],
+        "main_product_image": "products/stationeries/compas_maped.jpg",
+        "additional_images": [],
+        "url_name": "compas_individuel_maped",
+        "url_link": "papeterie/compas_individuel_maped.html",
+        "objectID": "5651241"
+    },
+    {
+        "product_name": "Bo\u00eete de g\u00e9om\u00e9trie - Maped",
+        "model_no": "n/a",
+        "product_category": "Divers",
+        "product_details": [
+            "Bo\u00eete de g\u00e9om\u00e9trie",
+            "Marque Maped"
+        ],
+        "main_product_image": "products/stationeries/bte_geo_maped.jpg",
+        "additional_images": [],
+        "url_name": "bte_geo_maped",
+        "url_link": "papeterie/bte_geo_maped.html",
+        "objectID": "5651221"
+    },
+    {
+        "product_name": "Bo\u00eete de g\u00e9om\u00e9trie - Oxford bleu",
+        "model_no": "n/a",
+        "product_category": "Divers",
+        "product_details": [
+            "Bo\u00eete de g\u00e9om\u00e9trie",
+            "Marque Oxford bleu"
+        ],
+        "main_product_image": "products/stationeries/bte_geo_oxford_bleu.jpg",
+        "additional_images": [],
+        "url_name": "bte_geo_oxford_bleu",
+        "url_link": "papeterie/bte_geo_oxford_bleu.html",
+        "objectID": "5651061"
+    },
+    {
+        "product_name": "Ardoise blanche effa\u00e7able \u00e0 sec BIC Velleda",
+        "model_no": "n/a",
+        "product_category": "Divers",
+        "product_details": [
+            "Dimensions d'environ 20x31cm",
+            "Marque BIC Velleda",
+            "Dispobible en plusieurs couleurs"
+        ],
+        "main_product_image": "products/stationeries/ardoise_velleda.jpg",
+        "additional_images": [],
+        "url_name": "ardoise_velleda",
+        "url_link": "papeterie/ardoise_velleda.html",
+        "objectID": "5487341"
+    },
+    {
+        "product_name": "Copies doubles perfor\u00e9es 21x29.7 5x5 200p",
+        "model_no": "n/a",
+        "product_category": "Papiers",
+        "product_details": [
+            "Format 21x29.7/A4",
+            "5x5/Petit carreaux",
+            "200 pages/ 100 feuilles",
+            "Perfor\u00e9es",
+            "Marque Calligraphe"
+        ],
+        "main_product_image": "products/papiers/copies_doubles_5x5.jpg",
+        "additional_images": [],
+        "url_name": "copies_doubles_5x5_200p",
+        "url_link": "papiers/copies_doubles_5x5_200p.html",
+        "objectID": "5486721"
+    },
+    {
+        "product_name": "Feuilles mobiles perfor\u00e9es 21x29.7 5x5 200p",
+        "model_no": "n/a",
+        "product_category": "Papiers",
+        "product_details": [
+            "Format 21x29.7/A4",
+            "5x5/Petit carreaux",
+            "200 pages/ 100 feuilles",
+            "Perfor\u00e9es",
+            "Marque Calligraphe"
+        ],
+        "main_product_image": "products/papiers/feuilles_mobiles_5x5.jpeg",
+        "additional_images": [],
+        "url_name": "feuilles_mobiles_5x5_200p",
+        "url_link": "papiers/feuilles_mobiles_5x5_200p.html",
+        "objectID": "5486671"
+    },
+    {
+        "product_name": "Copies doubles perfor\u00e9es 21x29.7 S\u00e9y\u00e8s 200p",
+        "model_no": "n/a",
+        "product_category": "Papiers",
+        "product_details": [
+            "Format 21x29.7/A4",
+            "S\u00e9y\u00e8s/Grand carreaux",
+            "200 pages/ 100 feuilles",
+            "Perfor\u00e9es",
+            "Marque Calligraphe"
+        ],
+        "main_product_image": "products/papiers/copies_doubles_seyes.jpg",
+        "additional_images": [],
+        "url_name": "copies_doubles_seyes_200p",
+        "url_link": "papiers/copies_doubles_seyes_200p.html",
+        "objectID": "5486531"
+    },
+    {
+        "product_name": "Feuilles mobiles perfor\u00e9es 21x29.7 S\u00e9y\u00e8s 200p",
+        "model_no": "n/a",
+        "product_category": "Papiers",
+        "product_details": [
+            "Format 21x29.7/A4",
+            "S\u00e9y\u00e8s/Grand carreaux",
+            "200 pages/ 100 feuilles",
+            "Perfor\u00e9es",
+            "Marque Calligraphe"
+        ],
+        "main_product_image": "products/papiers/feuilles_mobiles_seyes.jpg",
+        "additional_images": [],
+        "url_name": "feuilles_mobiles_seyes_200p",
+        "url_link": "papiers/feuilles_mobiles_seyes_200p.html",
+        "objectID": "5486451"
     },
     {
         "product_name": "Zebra Mechanical Pencil, Air Fit S, 0.5mm",
@@ -441,19 +455,5 @@
         "url_name": "pens_bic_ballpoint",
         "url_link": "pens/pens_bic_ballpoint.html",
         "objectID": "5048321"
-    },
-    {
-        "product_name": "Calculatrice Casio FX 92",
-        "model_no": "n/a",
-        "product_category": "Calculatrices",
-        "product_details": [
-            "Mod\u00e8le FX 92",
-            "Marque Casio"
-        ],
-        "main_product_image": "products/calculatrices/casio_fx92.jpg",
-        "additional_images": [],
-        "url_name": "calculatrice_casio_fx_92",
-        "url_link": "papeterie/calculatrice_casio_fx_92.html",
-        "objectID": "2163570"
     }
 ]
