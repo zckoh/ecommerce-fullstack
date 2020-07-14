@@ -100,37 +100,49 @@ Go to the following link to install Python in your system:
     touch website/secrets.yaml
     ```
 
-    Run the following command which will generate a string of random characters. Copy this string, you will need in the next steps: 
+    First add the following lines in the two files (we will fill in the values in the next step):
+    - `secrets.txt` (Please save the file with LF line sequence) :
+        ```bash
+        export DJANGO_SECRET=""
+        export ALGOLIA_ADMIN_API_KEY=""
+        export MJ_APIKEY_PUBLIC=''
+        export MJ_APIKEY_PRIVATE=''
+        ```
+    - `secrets.yaml` (Please save the file with LF line sequence) :
+        ```bash
+        env_variables:
+          DJANGO_SECRET: ''
+          MJ_APIKEY_PUBLIC: ''
+          MJ_APIKEY_PRIVATE: ''
+        ```
+
+    For `DJANGO_SECRET`, run the following command which will generate a string of random characters:
     ```
     python -c 'from django.core.management.utils import get_random_secret_key; print(get_random_secret_key())'
     ```
 
-    Open the file `website/secrets.txt`, and add the following line in the file, replacing `VALUE_OF_DJANGO_SECRET` with the string which you've copied from the previous python command:
-    ```bash
-    export DJANGO_SECRET="VALUE_OF_DJANGO_SECRET"
-    ```
-    
-    Open the file `website/secrets.yaml`, and add the following line in the file, replacing `VALUE_OF_DJANGO_SECRET` with the string which you've copied from the previous python command:
-    ```yaml
-    env_variables:
-      DJANGO_SECRET: 'VALUE_OF_DJANGO_SECRET'
-    ```
+    Copy the string of random characters generated, and paste the string as the value of `DJANGO_SECRET` .
 
-    Open the file `website/secrets.txt` again, and add the following line in the file. Go to https://www.algolia.com/apps/9SXIDIVU1E/api-keys/all, and copy the Admin API Key. Now replace `VALUE_OF_ALGOLIA_ADMIN_API_KEY` with the copied API Key value:
-    ```bash
-    export ALGOLIA_ADMIN_API_KEY="VALUE_OF_ALGOLIA_ADMIN_API_KEY"
-    ```
+    For `ALGOLIA_ADMIN_API_KEY`, go to https://www.algolia.com/apps/9SXIDIVU1E/api-keys/all, and copy the Admin API Key and paste the API Key as the value of `ALGOLIA_ADMIN_API_KEY`.
+
+    For `MJ_APIKEY_PUBLIC` and `MJ_APIKEY_PRIVATE`, login to Mailjet account, and head to "Account Settings", then click on "Master API Key & Sub API key management", there you will find the 2 keys. Copy and paste them into the two secrets file accordingly. 
 
 4) Now the following files should look something like this (values below are example values):
    - `website/secrets.txt`: 
         ```bash
+        # WARNING: make sure this file is saved as LF file sequence
         export DJANGO_SECRET="1234567890qwertyuiop[]asdfghjklzxcvbnm"
         export ALGOLIA_ADMIN_API_KEY="abcdefghijklmnopqrstuvwxvyz"
+        export MJ_APIKEY_PUBLIC='abcdefghijklmnop1234567890'
+        export MJ_APIKEY_PRIVATE='abcdefghijklmnop1234567890'
         ```
    - `website/secrets.yaml`:
         ```yaml
+        # WARNING: make sure this file is saved as LF file sequence
         env_variables:
           DJANGO_SECRET: '1234567890qwertyuiop[]asdfghjklzxcvbnm'
+          MJ_APIKEY_PUBLIC: 'abcdefghijklmnop1234567890'
+          MJ_APIKEY_PRIVATE: 'abcdefghijklmnop1234567890'
         ```
 
 ### Now you are all set!
@@ -144,6 +156,11 @@ pipenv shell
 
 ### To run django locally:
 ```bash
+### Use local_deploy script
+./website/scripts/local_deploy.sh
+
+### OR do it manually 
+
 cd website
 source secrets.txt
 
@@ -152,26 +169,14 @@ python manage.py runserver
 ```
 
 ### To deploy to Production/GAE (Google App Engine):
-Use `deploy.sh` script (recommended):
+Use `deploy.sh` script:
 ```bash
 cd website
-
-# make the script executable 
-chmod +x ./scripts/deploy.sh
 
 # run the script
 ./scripts/deploy.sh
 # Then follow the prompts accordingly
 ```
-
-OR use manual steps to deploy:
-```bash
-cd tf-nglun/website
-pipenv run python manage.py collectstatic
-
-gcloud app deploy
-```
-
 
 ### To add new products:
 #### Adding product(s) to existing product category
@@ -187,36 +192,34 @@ gcloud app deploy
 6) Copy the JSON example below and replace the field values according to the product details:  
    JSON example
    ```json
-    {
-        "product_name": "Zebra Mechanical Pencil, Air Fit S, 0.5mm",
-        "model_no": "MA19",
-        "product_category": "Pens",
-        "product_details": [
-            "Mechanical Pencil, Air fit s",
-            "With silicone grip",
-            "For 0.5mm lead, assorted colors"
-        ],
-        "product_image_path": "products/pens/zebra-airfit.jpg",
-        "url_name": "zebra_airfit",
-        "url_link": "pens/zebra_airfit.html"
     }
+        "product_name": "Cahier 17x22 Travaux Pratiques 64pg Polypro",
+        "model_no": "n/a",
+        "product_category": "Cahiers",
+        "product_details": [
+            "Format 17x22",
+            "64 pages",
+            "Travaux Pratiques",
+            "Couverture Polypro",
+            "Marque Calligraphe",
+            "Disponible uniquement en incolore"
+        ],
+        "main_product_image": "products/copybooks/cahier_tp_64p_calligraphe_pp.jpg",
+        "additional_images": [],
+        "url_name": "17x22_tp_64pg_seyes_calligraphe",
+        "url_link": "cahiers/17x22_tp_64pg_calligraphe.html",
+        "objectID": "5650201"
+    },
    ```
 7) Click "Save"
 8) Repeat steps 2-7 if you have more products to add, else proceed to next step
-9)  Update local product_list.json:
-    ```bash
-    pipenv shell 
-    python scripts/update_product_list.py
-    ```
-11) Verify changes
+9)  Verify changes
    - Run local django server, verify that the new product is added
      ```bash
-     ## NOTE: DON'T FORGET TO SET DEBUG = True in website/settings.py first when testing locally
-     python manage.py runserver
-
+     ./website/scripts/local_deploy.sh
      ## after testing, quit the server with CONTROL+C
      ```
-12) Save changes and commit/push to Git
+10) Save changes and commit/push to Git
     - Save changes
     - `git add` the new/updated files:
         ```bash
@@ -225,7 +228,7 @@ gcloud app deploy
         ```
     - Make a `git commit`
     - `git push`
-13) Deploy to production!
+11) Deploy to production!
 
 
 #### Adding product(s) of a new product category
@@ -242,36 +245,34 @@ gcloud app deploy
 7) Copy the JSON example below and replace the field values according to the product details:  
    JSON example
    ```json
-    {
-        "product_name": "Zebra Mechanical Pencil, Air Fit S, 0.5mm",
-        "model_no": "MA19",
-        "product_category": "Pens",
-        "product_details": [
-            "Mechanical Pencil, Air fit s",
-            "With silicone grip",
-            "For 0.5mm lead, assorted colors"
-        ],
-        "product_image_path": "products/pens/zebra-airfit.jpg",
-        "url_name": "zebra_airfit",
-        "url_link": "pens/zebra_airfit.html"
     }
+        "product_name": "Cahier 17x22 Travaux Pratiques 64pg Polypro",
+        "model_no": "n/a",
+        "product_category": "Cahiers",
+        "product_details": [
+            "Format 17x22",
+            "64 pages",
+            "Travaux Pratiques",
+            "Couverture Polypro",
+            "Marque Calligraphe",
+            "Disponible uniquement en incolore"
+        ],
+        "main_product_image": "products/copybooks/cahier_tp_64p_calligraphe_pp.jpg",
+        "additional_images": [],
+        "url_name": "17x22_tp_64pg_seyes_calligraphe",
+        "url_link": "cahiers/17x22_tp_64pg_calligraphe.html",
+        "objectID": "5650201"
+    },
    ```
 8) Click "Save"
 9) Repeat steps 2-7 if you have more products to add, else proceed to next step
-10) Update local product_list.json:
-    ```bash
-    pipenv shell 
-    python scripts/update_product_list.py
-    ```
-11) Verify changes
+10)  Verify changes
    - Run local django server, verify that the new product is added
      ```bash
-     ## NOTE: DON'T FORGET TO SET DEBUG = True in website/settings.py first when testing locally
-     python manage.py runserver
-
+     ./website/scripts/local_deploy.sh
      ## after testing, quit the server with CONTROL+C
      ```
-12) Save changes and commit/push to Git
+11) Save changes and commit/push to Git
     - Save changes
     - `git add` the new/updated files:
         ```bash
@@ -280,4 +281,4 @@ gcloud app deploy
         ```
     - Make a `git commit`
     - `git push`
-13) Deploy to production!
+12) Deploy to production!
