@@ -216,10 +216,28 @@
         "objectID": "5484151"
     },
     {
-        "product_name": "Calculatrice Casio FX 35 + E",
+        "product_name": "Calculatrice Casio FX 82 MS",
         "model_no": "n/a",
         "product_category": "Calculatrices",
         "product_details": [
+            "Calculatrice scientifique",
+            "Mod\u00e8le FX 82 MS",
+            "Marque: Casio"
+        ],
+        "main_product_image": "products/calculatrices/casio_fx82_ms.jpeg",
+        "additional_images": [
+            "products/calculatrices/casio_fx82_ms_2.jpg"
+        ],
+        "url_name": "calculatrice_casio_scientifique_fx82_ms",
+        "url_link": "papeterie/calculatrice_casio_scientifique_fx82_ms.html",
+        "objectID": "5747921"
+    },
+    {
+        "product_name": "Calculatrice Graphique Casio FX 35 + E",
+        "model_no": "n/a",
+        "product_category": "Calculatrices",
+        "product_details": [
+            "Calculatrice Graphique",
             "Mod\u00e8le FX 35 + E",
             "Marque Casio"
         ],
@@ -234,6 +252,7 @@
         "model_no": "n/a",
         "product_category": "Calculatrices",
         "product_details": [
+            "Calculatrice scientifique",
             "Mod\u00e8le FX 350 ES Plus",
             "Marque Casio"
         ],
@@ -248,6 +267,7 @@
         "model_no": "n/a",
         "product_category": "Calculatrices",
         "product_details": [
+            "Calculatrice scientifique",
             "Mod\u00e8le FX 92",
             "Marque Casio"
         ],
@@ -256,6 +276,56 @@
         "url_name": "calculatrice_casio_fx_92",
         "url_link": "papeterie/calculatrice_casio_fx_92.html",
         "objectID": "2163570"
+    },
+    {
+        "product_name": "Classeur pour fiches cartonn\u00e9es(A5) Viquel",
+        "model_no": "n/a",
+        "product_category": "Classeurs",
+        "product_details": [
+            "Format A5/ pour fiches cartonn\u00e9es",
+            "Propyglass",
+            "2 anneaux",
+            "Marque Viquel"
+        ],
+        "main_product_image": "products/classeurs/a5_propyglass.jpg",
+        "additional_images": [
+            "products/classeurs/a5_propyglass_2.jpg"
+        ],
+        "url_name": "viquel_souple_a5_propyglass",
+        "url_link": "classeurs/viquel_souple_a5_propyglass.html",
+        "objectID": "5747541"
+    },
+    {
+        "product_name": "Classeur Souple A4 Epais, 4 anneaux, Viquel",
+        "model_no": "n/a",
+        "product_category": "Classeurs",
+        "product_details": [
+            "Format A4",
+            "Propyglass Epais",
+            "4 anneaux",
+            "Marque Viquel"
+        ],
+        "main_product_image": "products/classeurs/a4_propyglass_epais.jpg",
+        "additional_images": [],
+        "url_name": "viquel_souple_a4_propyglass_epais",
+        "url_link": "classeurs/viquel_souple_a4_propyglass_epais.html",
+        "objectID": "5747461"
+    },
+    {
+        "product_name": "Classeur Souple A4 Mince, 4 anneaux, Viquel",
+        "model_no": "n/a",
+        "product_category": "Classeurs",
+        "product_details": [
+            "Format A4",
+            "Propyglass Mince",
+            "4 anneaux",
+            "Marque Viquel"
+        ],
+        "main_product_image": "products/classeurs/a4_propyglass_mince.jpg",
+        "additional_images": [],
+        "url_name": "viquel_souple_a4_propyglass_mince",
+        "url_link": "classeurs/viquel_souple_a4_propyglass_mince.html",
+        "objectID": "5747411"
     },
     {
         "product_name": "Classeur A4, dos arrondis",
@@ -272,6 +342,248 @@
         "objectID": "5056551"
     },
     {
+        "product_name": "Bo\u00eete de 24 crayons de couleurs aquarelles Staedtler",
+        "model_no": "n/a",
+        "product_category": "Divers",
+        "product_details": [
+            "Crayons de couleurs aquarelles",
+            "Bo\u00eete de 24",
+            "Marque: Staedtler, Noris Club"
+        ],
+        "main_product_image": "products/stationeries/crayons_aquarelles_staedtler_24.jpg",
+        "additional_images": [],
+        "url_name": "crayons_aquarelles_staedtler_24",
+        "url_link": "divers/crayons_aquarelles_staedtler_24.html",
+        "objectID": "5747081"
+    },
+    {
+        "product_name": "Bo\u00eete de 12 crayons de couleurs aquarelles Staedtler",
+        "model_no": "n/a",
+        "product_category": "Divers",
+        "product_details": [
+            "Crayons de couleurs aquarelles",
+            "Bo\u00eete de 12",
+            "Marque: Staedtler, Noris Club"
+        ],
+        "main_product_image": "products/stationeries/crayons_aquarelles_staedtler_12.jpg",
+        "additional_images": [],
+        "url_name": "crayons_aquarelles_staedtler_12",
+        "url_link": "divers/crayons_aquarelles_staedtler_12.html",
+        "objectID": "5747051"
+    },
+    {
+        "product_name": "Bo\u00eete de 24 crayons de couleurs Staedtler",
+        "model_no": "n/a",
+        "product_category": "Divers",
+        "product_details": [
+            "Crayons de couleurs",
+            "Bo\u00eete de 24",
+            "Marque: Staedtler, Noris Club"
+        ],
+        "main_product_image": "products/stationeries/crayons_couleurs_staedtler_24.jpg",
+        "additional_images": [],
+        "url_name": "crayons_couleurs_staedtler_24",
+        "url_link": "divers/crayons_couleurs_staedtler_24.html",
+        "objectID": "5747021"
+    },
+    {
+        "product_name": "Bo\u00eete de 12 crayons de couleurs Staedtler",
+        "model_no": "n/a",
+        "product_category": "Divers",
+        "product_details": [
+            "Crayons de couleurs",
+            "Bo\u00eete de 12",
+            "Marque: Staedtler, Noris Club"
+        ],
+        "main_product_image": "products/stationeries/crayons_couleurs_staedtler_12.jpg",
+        "additional_images": [],
+        "url_name": "crayons_couleurs_staedtler_12",
+        "url_link": "divers/crayons_couleurs_staedtler_12.html",
+        "objectID": "5747001"
+    },
+    {
+        "product_name": "Crayons de cire 12 couleurs BIC Plastidecor",
+        "model_no": "n/a",
+        "product_category": "Divers",
+        "product_details": [
+            "Crayons de cire",
+            "Bo\u00eete de 12 couleurs",
+            "Marque BIC Plastidecor"
+        ],
+        "main_product_image": "products/stationeries/crayons_cire_12_bic.jpg",
+        "additional_images": [],
+        "url_name": "crayons_cire_12_bic",
+        "url_link": "divers/crayons_cire_12_bic.html",
+        "objectID": "5746921"
+    },
+    {
+        "product_name": "Crayon HB/2B/3B/4B/5B/6B Staedtler tradition",
+        "model_no": "n/a",
+        "product_category": "Divers",
+        "product_details": [
+            "Disponible en HB/2B/3B/4B/5B/6B",
+            "Marque Staedtler tradition"
+        ],
+        "main_product_image": "products/stationeries/crayon_tradition_2b.jpg",
+        "additional_images": [
+            "products/stationeries/crayon_tradition_grades.jpg"
+        ],
+        "url_name": "crayon_tradition_staedtler",
+        "url_link": "divers/crayon_tradition_staedtler.html",
+        "objectID": "5746851"
+    },
+    {
+        "product_name": "Tube de colle liquide UHU 125ml",
+        "model_no": "n/a",
+        "product_category": "Divers",
+        "product_details": [
+            "contenue: 125ml",
+            "all-purpose adhesive",
+            "Marque UHU"
+        ],
+        "main_product_image": "products/stationeries/colle_uhu_liquide_125ml.jpg",
+        "additional_images": [],
+        "url_name": "colle_uhu_liquide_125ml",
+        "url_link": "divers/colle_uhu_liquide_125ml.html",
+        "objectID": "5746521"
+    },
+    {
+        "product_name": "Tube de colle liquide UHU 33ml",
+        "model_no": "n/a",
+        "product_category": "Divers",
+        "product_details": [
+            "contenue: 33ml",
+            "all-purpose adhesive",
+            "Marque UHU"
+        ],
+        "main_product_image": "products/stationeries/colle_uhu_liquide_33ml.jpg",
+        "additional_images": [],
+        "url_name": "colle_uhu_liquide_33ml",
+        "url_link": "divers/colle_uhu_liquide_33ml.html",
+        "objectID": "5746471"
+    },
+    {
+        "product_name": "B\u00e2ton de colle Staedtler 20g",
+        "model_no": "n/a",
+        "product_category": "Divers",
+        "product_details": [
+            "contenue: 20g",
+            "Marque Staedtler"
+        ],
+        "main_product_image": "products/stationeries/colle_staedtler_20g.jpg",
+        "additional_images": [],
+        "url_name": "colle_staedtler_20g",
+        "url_link": "divers/colle_staedtler_20g.html",
+        "objectID": "5746371"
+    },
+    {
+        "product_name": "UHU colle universelle extra gel, 31ml",
+        "model_no": "n/a",
+        "product_category": "Divers",
+        "product_details": [
+            "contenue: 31ml",
+            "extra gel",
+            "Marque UHU"
+        ],
+        "main_product_image": "products/stationeries/colle_uhu_extra_gel.jpg",
+        "additional_images": [
+            "products/stationeries/colle_uhu_extra_gel_2.jpg"
+        ],
+        "url_name": "colle_uhu_extra_gel",
+        "url_link": "divers/colle_uhu_extra_gel.html",
+        "objectID": "5746301"
+    },
+    {
+        "product_name": "B\u00e2ton de colle UHU Stic 21g",
+        "model_no": "n/a",
+        "product_category": "Divers",
+        "product_details": [
+            "contenue: 21g",
+            "Marque UHU"
+        ],
+        "main_product_image": "products/stationeries/colle_uhu_21g.jpg",
+        "additional_images": [],
+        "url_name": "colle_uhu_stic_21g",
+        "url_link": "divers/colle_uhu_stic_21g.html",
+        "objectID": "5746221"
+    },
+    {
+        "product_name": "B\u00e2ton de colle UHU Stic 8.2g",
+        "model_no": "n/a",
+        "product_category": "Divers",
+        "product_details": [
+            "contenue: 8.2g",
+            "Marque UHU"
+        ],
+        "main_product_image": "products/stationeries/colle_uhu_8g.jpg",
+        "additional_images": [],
+        "url_name": "colle_uhu_stic_8g",
+        "url_link": "divers/colle_uhu_stic_8g.html",
+        "objectID": "5746191"
+    },
+    {
+        "product_name": "Paire de ciseaux \u00e0 lame de 17cms Staedtler",
+        "model_no": "n/a",
+        "product_category": "Divers",
+        "product_details": [
+            "Lame de 17cms",
+            "Marque Staedtler"
+        ],
+        "main_product_image": "products/stationeries/ciseaux_17cm.jpg",
+        "additional_images": [],
+        "url_name": "ciseaux_17cm_staedtler",
+        "url_link": "divers/ciseaux_17cm_staedtler.html",
+        "objectID": "5746131"
+    },
+    {
+        "product_name": "Paire de ciseaux \u00e0 lame de 14cms Staedtler",
+        "model_no": "n/a",
+        "product_category": "Divers",
+        "product_details": [
+            "ciseaux pour enfants",
+            "\u00e0 bouts ronds",
+            "Lame de 14cms",
+            "Marque Staedtler"
+        ],
+        "main_product_image": "products/stationeries/ciseaux_14cm.jpg",
+        "additional_images": [],
+        "url_name": "ciseaux_14cm_staedtler",
+        "url_link": "divers/ciseaux_14cm_staedtler.html",
+        "objectID": "5745741"
+    },
+    {
+        "product_name": "Effaceur pour ardoise grande taille Yosogo",
+        "model_no": "n/a",
+        "product_category": "Divers",
+        "product_details": [
+            "Effaceur pour ardoise",
+            "Taille - moyen 828",
+            "Marque Yosogo"
+        ],
+        "main_product_image": "products/stationeries/effaceur_yosogo_grand.jpg",
+        "additional_images": [
+            "products/stationeries/effaceur_yosogo_grand_2.jpg"
+        ],
+        "url_name": "effaceur_yosogo_grand",
+        "url_link": "divers/effaceur_yosogo_grand.html",
+        "objectID": "5745121"
+    },
+    {
+        "product_name": "Effaceur pour ardoise petite taille Yosogo",
+        "model_no": "n/a",
+        "product_category": "Divers",
+        "product_details": [
+            "Effaceur pour ardoise",
+            "Taille - mini 868",
+            "Marque Yosogo"
+        ],
+        "main_product_image": "products/stationeries/effaceur_yosogo_mini.jpg",
+        "additional_images": [],
+        "url_name": "effaceur_yosogo_mini",
+        "url_link": "divers/effaceur_yosogo_mini.html",
+        "objectID": "5745031"
+    },
+    {
         "product_name": "Compas individuel - Maped",
         "model_no": "n/a",
         "product_category": "Divers",
@@ -282,7 +594,7 @@
         "main_product_image": "products/stationeries/compas_maped.jpg",
         "additional_images": [],
         "url_name": "compas_individuel_maped",
-        "url_link": "papeterie/compas_individuel_maped.html",
+        "url_link": "divers/compas_individuel_maped.html",
         "objectID": "5651241"
     },
     {
@@ -296,7 +608,7 @@
         "main_product_image": "products/stationeries/bte_geo_maped.jpg",
         "additional_images": [],
         "url_name": "bte_geo_maped",
-        "url_link": "papeterie/bte_geo_maped.html",
+        "url_link": "divers/bte_geo_maped.html",
         "objectID": "5651221"
     },
     {
@@ -310,7 +622,7 @@
         "main_product_image": "products/stationeries/bte_geo_oxford_bleu.jpg",
         "additional_images": [],
         "url_name": "bte_geo_oxford_bleu",
-        "url_link": "papeterie/bte_geo_oxford_bleu.html",
+        "url_link": "divers/bte_geo_oxford_bleu.html",
         "objectID": "5651061"
     },
     {
@@ -325,8 +637,122 @@
         "main_product_image": "products/stationeries/ardoise_velleda.jpg",
         "additional_images": [],
         "url_name": "ardoise_velleda",
-        "url_link": "papeterie/ardoise_velleda.html",
+        "url_link": "divers/ardoise_velleda.html",
         "objectID": "5487341"
+    },
+    {
+        "product_name": "Flip file(Porte-vues) A4 100 Pochettes/200 Vues",
+        "model_no": "n/a",
+        "product_category": "Flip Files",
+        "product_details": [
+            "Format A4",
+            "100 Pochettes/200 Vues",
+            "Marque Viquel",
+            "Disponible en plusieurs couleurs"
+        ],
+        "main_product_image": "products/flipfiles/flipfile.jpg",
+        "additional_images": [
+            "products/flipfiles/flipfile2.jpeg",
+            "products/flipfiles/flipfile_100p.jpg"
+        ],
+        "url_name": "flipfile_100p_200v_viquel",
+        "url_link": "flipfiles/flipfile_100p_200v_viquel.html",
+        "objectID": "5744811"
+    },
+    {
+        "product_name": "Flip file(Porte-vues) A4 80 Pochettes/160 Vues",
+        "model_no": "n/a",
+        "product_category": "Flip Files",
+        "product_details": [
+            "Format A4",
+            "80 Pochettes/160 Vues",
+            "Marque Viquel",
+            "Disponible en plusieurs couleurs"
+        ],
+        "main_product_image": "products/flipfiles/flipfile.jpg",
+        "additional_images": [
+            "products/flipfiles/flipfile2.jpeg",
+            "products/flipfiles/flipfile_100p.jpg"
+        ],
+        "url_name": "flipfile_80p_160v_viquel",
+        "url_link": "flipfiles/flipfile_80p_160v_viquel.html",
+        "objectID": "5744781"
+    },
+    {
+        "product_name": "Flip file(Porte-vues) A4 60 Pochettes/120 Vues",
+        "model_no": "n/a",
+        "product_category": "Flip Files",
+        "product_details": [
+            "Format A4",
+            "60 Pochettes/120 Vues",
+            "Marque Viquel",
+            "Disponible en plusieurs couleurs"
+        ],
+        "main_product_image": "products/flipfiles/flipfile.jpg",
+        "additional_images": [
+            "products/flipfiles/flipfile2.jpeg",
+            "products/flipfiles/flipfile_60p.jpg"
+        ],
+        "url_name": "flipfile_60p_120v_viquel",
+        "url_link": "flipfiles/flipfile_60p_120v_viquel.html",
+        "objectID": "5744721"
+    },
+    {
+        "product_name": "Flip file(Porte-vues) A4 40 Pochettes/80 Vues",
+        "model_no": "n/a",
+        "product_category": "Flip Files",
+        "product_details": [
+            "Format A4",
+            "40 Pochettes/80 Vues",
+            "Marque Viquel",
+            "Disponible en plusieurs couleurs"
+        ],
+        "main_product_image": "products/flipfiles/flipfile.jpg",
+        "additional_images": [
+            "products/flipfiles/flipfile2.jpeg",
+            "products/flipfiles/flipfile_40p.jpg"
+        ],
+        "url_name": "flipfile_40p_80v_viquel",
+        "url_link": "flipfiles/flipfile_40p_80v_viquel.html",
+        "objectID": "5744711"
+    },
+    {
+        "product_name": "Flip file(Porte-vues) A4 30 Pochettes/60 Vues",
+        "model_no": "n/a",
+        "product_category": "Flip Files",
+        "product_details": [
+            "Format A4",
+            "30 Pochettes/60 Vues",
+            "Marque Viquel",
+            "Disponible en plusieurs couleurs"
+        ],
+        "main_product_image": "products/flipfiles/flipfile.jpg",
+        "additional_images": [
+            "products/flipfiles/flipfile2.jpeg",
+            "products/flipfiles/flipfile_30p.jpg"
+        ],
+        "url_name": "flipfile_30p_60v_viquel",
+        "url_link": "flipfiles/flipfile_30p_60v_viquel.html",
+        "objectID": "5744671"
+    },
+    {
+        "product_name": "Flip file(Porte-vues) A4 20 Pochettes/40 Vues",
+        "model_no": "n/a",
+        "product_category": "Flip Files",
+        "product_details": [
+            "Format A4",
+            "20 Pochettes/40 Vues",
+            "Marque Viquel",
+            "Disponible en plusieurs couleurs"
+        ],
+        "main_product_image": "products/flipfiles/flipfile.jpg",
+        "additional_images": [
+            "products/flipfiles/flipfile2.jpeg",
+            "products/flipfiles/flipfile_20p.jpg"
+        ],
+        "url_name": "flipfile_20p_40v_viquel",
+        "url_link": "flipfiles/flipfile_20p_40v_viquel.html",
+        "objectID": "5744321"
     },
     {
         "product_name": "Copies doubles perfor\u00e9es 21x29.7 5x5 200p",
@@ -397,63 +823,37 @@
         "objectID": "5486451"
     },
     {
-        "product_name": "Zebra Mechanical Pencil, Air Fit S, 0.5mm",
-        "model_no": "MA19",
+        "product_name": "Blanco/Correction Pen, Pointe en plastique, UNI",
+        "model_no": "n/a",
         "product_category": "Stylos",
         "product_details": [
-            "Mechanical Pencil, Air fit s",
-            "With silicone grip",
-            "For 0.5mm lead, assorted colors"
+            "Contenue: 8ml",
+            "Pointe en plastique 1.0mm",
+            "Marque: Uni"
         ],
-        "main_product_image": "products/pens/zebra-airfit.jpg",
-        "additional_images": [],
-        "url_name": "zebra_airfit",
-        "url_link": "pens/zebra_airfit.html",
-        "objectID": "504835001"
+        "main_product_image": "products/pens/blanco_plastic_tip_uni.jpeg",
+        "additional_images": [
+            "products/pens/blanco_plastic_tip_uni_2.jpg"
+        ],
+        "url_name": "blanco_pointe_en_plastique_uni",
+        "url_link": "stylos/blanco_pointe_en_plastique_uni.html",
+        "objectID": "5747801"
     },
     {
-        "product_name": "Pentel EnerGel X Gel Rollerball Pen BL107 Set of 12 Assorted",
-        "model_no": "PN65240",
+        "product_name": "Blanco/Correction Pen, Pointe m\u00e9tallique, UNI",
+        "model_no": "n/a",
         "product_category": "Stylos",
         "product_details": [
-            "Quick-drying, smooth-writing gel ink retractable pen",
-            "Set of 12 assorted contains one of each colour available.",
-            "Refillable with LR7 refill."
+            "Contenue: 8ml",
+            "Pointe m\u00e9tallique 1.0mm",
+            "Marque: Uni"
         ],
-        "main_product_image": "products/pens/pentel-energel-x.jpg",
-        "additional_images": [],
-        "url_name": "pentel_energel_x",
-        "url_link": "pens/pentel_energel_x.html",
-        "objectID": "504834001"
-    },
-    {
-        "product_name": "Pilot G2 Premium Retractable Gel Ink Rolling Ball Pen, 1.0 mm Bold Point, Black, Pack of 12",
-        "model_no": "23041681",
-        "product_category": "Stylos",
-        "product_details": [
-            "Superior Quality G-2 Gel Ink Ballpoint Pen & Refill Range",
-            "Refillable Using BLS-G2-5 (1 Piece Per Pack)",
-            "Pack of 12"
+        "main_product_image": "products/pens/blanco_metal_tip_uni.jpg",
+        "additional_images": [
+            "products/pens/blanco_metal_tip_uni_2.jpg"
         ],
-        "main_product_image": "products/pens/pilot-g2-black.jpg",
-        "additional_images": [],
-        "url_name": "pilot_g2_black",
-        "url_link": "pens/pilot_g2_black.html",
-        "objectID": "504833001"
-    },
-    {
-        "product_name": "BIC Orange Original Fine Ballpoint Pens Fine Point (0.8 mm) - Black, Box of 20",
-        "model_no": "1199110114",
-        "product_category": "Stylos",
-        "product_details": [
-            "The fine 0.8 mm point on these BIC Orange Original Fine pens was designed for people who love thin precise lines",
-            "This box of 20 black ballpoints is great for many sessions of taking notes and drawing",
-            "These BIC Cristal Orange Original Fine ballpoint pens are made to last with enough ink to write for an average of 3 - 5 km"
-        ],
-        "main_product_image": "products/pens/bic-orange-ballpoint.jpg",
-        "additional_images": [],
-        "url_name": "pens_bic_ballpoint",
-        "url_link": "pens/pens_bic_ballpoint.html",
-        "objectID": "5048321"
+        "url_name": "blanco_pointe_metallique_uni",
+        "url_link": "stylos/blanco_pointe_metallique_uni.html",
+        "objectID": "5747751"
     }
 ]
