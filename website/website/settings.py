@@ -20,6 +20,8 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = os.environ['DJANGO_SECRET']
+MJ_APIKEY_PUBLIC = os.environ.get('MJ_APIKEY_PUBLIC')
+MJ_APIKEY_PRIVATE = os.environ.get('MJ_APIKEY_PRIVATE')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
