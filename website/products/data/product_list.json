@@ -233,11 +233,10 @@
         "objectID": "5747921"
     },
     {
-        "product_name": "Calculatrice Graphique Casio FX 35 + E",
+        "product_name": "Calculatrice Casio FX 35 + E II",
         "model_no": "n/a",
         "product_category": "Calculatrices",
         "product_details": [
-            "Calculatrice Graphique",
             "Mod\u00e8le FX 35 + E",
             "Marque Casio"
         ],
@@ -340,6 +339,154 @@
         "url_name": "exacompta_a4",
         "url_link": "classeurs/exacompta_a4.html",
         "objectID": "5056551"
+    },
+    {
+        "product_name": "Pinceaux pour aquarelle, Picasso manche bleu",
+        "model_no": "n/a",
+        "product_category": "Divers",
+        "product_details": [
+            "Disponible en num\u00e9ro 2,6 et 8",
+            "Marque: Picasso"
+        ],
+        "main_product_image": "products/stationeries/pinceau_bross_bleu.jpeg",
+        "additional_images": [
+            "products/stationeries/pinceau_bross_bleu_2.jpeg",
+            "products/stationeries/pinceau_bross_bleu_3.jpg"
+        ],
+        "url_name": "pinceau_bross_bleu",
+        "url_link": "divers/pinceau_bross_bleu.html",
+        "objectID": "6041791"
+    },
+    {
+        "product_name": "R\u00e8gle transparente de 30cm, Helix ShatterResistant",
+        "model_no": "n/a",
+        "product_category": "Divers",
+        "product_details": [
+            "30cm",
+            "Transparent",
+            "PVC/ Plastique",
+            "Marque: Helix, ShatterResistant"
+        ],
+        "main_product_image": "products/stationeries/regle_helix_shatterproof_30cm.jpg",
+        "additional_images": [
+            "products/stationeries/regle_helix_shatterproof_30cm_2.jpeg"
+        ],
+        "url_name": "regle_helix_shatterproof_30cm",
+        "url_link": "divers/regle_helix_shatterproof_30cm.html",
+        "objectID": "6041271"
+    },
+    {
+        "product_name": "R\u00e8gle transparente de 30cm, Helix",
+        "model_no": "n/a",
+        "product_category": "Divers",
+        "product_details": [
+            "30cm",
+            "Transparent",
+            "PVC/ Plastique",
+            "Marque: Helix"
+        ],
+        "main_product_image": "products/stationeries/regle_helix_30cm.jpg",
+        "additional_images": [
+            "products/stationeries/regle_helix_30cm_2.jpg"
+        ],
+        "url_name": "regle_helix_30cm",
+        "url_link": "divers/regle_helix_30cm.html",
+        "objectID": "6041181"
+    },
+    {
+        "product_name": "Pochette en plastique \u00e0 rabats A4 Exacompta",
+        "model_no": "n/a",
+        "product_category": "Divers",
+        "product_details": [
+            "Pochette \u00e0 \u00e9lastiques",
+            "Format A4/21x29.7",
+            "PVC/ Plastique",
+            "Marque: Exacompta"
+        ],
+        "main_product_image": "products/stationeries/pochette_rabats_exacompta.jpg",
+        "additional_images": [
+            "products/stationeries/pochette_rabats_exacompta_2.jpg",
+            "products/stationeries/pochette_rabats_exacompta_3.jpg"
+        ],
+        "url_name": "pochette_rabats_exacompta",
+        "url_link": "divers/pochette_rabats_exacompta.html",
+        "objectID": "6041081"
+    },
+    {
+        "product_name": "Gomme Staedtler Rasoplast Petite taille",
+        "model_no": "n/a",
+        "product_category": "Divers",
+        "product_details": [
+            "Gomme blanche",
+            "Petite taille",
+            "Marque: Staedtler"
+        ],
+        "main_product_image": "products/stationeries/gomme_staedtler_petit.jpg",
+        "additional_images": [],
+        "url_name": "gomme_staedtler_petit",
+        "url_link": "divers/gomme_staedtler_petit.html",
+        "objectID": "6040101"
+    },
+    {
+        "product_name": "Gomme Staedtler Rasoplast Grande taille",
+        "model_no": "n/a",
+        "product_category": "Divers",
+        "product_details": [
+            "Gomme blanche",
+            "Grande taille",
+            "Marque: Staedtler"
+        ],
+        "main_product_image": "products/stationeries/gomme_staedtler_grand.jpg",
+        "additional_images": [],
+        "url_name": "gomme_staedtler_grand",
+        "url_link": "divers/gomme_staedtler_grand.html",
+        "objectID": "6040061"
+    },
+    {
+        "product_name": "Paquet de 4 Feutres pour ardoise BIC Velleda",
+        "model_no": "n/a",
+        "product_category": "Divers",
+        "product_details": [
+            "Feutres pour ardoise",
+            "1 Paquet de 4 feutres",
+            "1 Rouge, 1 Bleu, 1 Noir, 1 Vert",
+            "Marque: BIC, Velleda"
+        ],
+        "main_product_image": "products/stationeries/feutres_velleda_bic.jpeg",
+        "additional_images": [],
+        "url_name": "feutres_velleda_bic",
+        "url_link": "divers/feutres_velleda_bic.html",
+        "objectID": "6039981"
+    },
+    {
+        "product_name": "Bo\u00eete de 12 Feutres fins, BIC",
+        "model_no": "n/a",
+        "product_category": "Divers",
+        "product_details": [
+            "Feutres fins",
+            "Bo\u00eete de 12",
+            "Marque: BIC, Plastidecor"
+        ],
+        "main_product_image": "products/stationeries/feutres_12_bic.jpg",
+        "additional_images": [],
+        "url_name": "feutres_fins_12_bic",
+        "url_link": "divers/feutres_fins_12_bic.html",
+        "objectID": "6039931"
+    },
+    {
+        "product_name": "Bo\u00eete de 12 Feutres fins, Staedtler",
+        "model_no": "n/a",
+        "product_category": "Divers",
+        "product_details": [
+            "Feutres fins",
+            "Bo\u00eete de 12",
+            "Marque: Staedtler, Noris Club"
+        ],
+        "main_product_image": "products/stationeries/feutres_12_staedtler.jpg",
+        "additional_images": [],
+        "url_name": "feutres_fins_12_staedtler",
+        "url_link": "divers/feutres_fins_12_staedtler.html",
+        "objectID": "6039891"
     },
     {
         "product_name": "Bo\u00eete de 24 crayons de couleurs aquarelles Staedtler",
@@ -755,6 +902,134 @@
         "objectID": "5744321"
     },
     {
+        "product_name": "Jeu de 12 intercalaires cartonn\u00e9s, A4",
+        "model_no": "n/a",
+        "product_category": "Intercalaires",
+        "product_details": [
+            "Format A4/21x29.7",
+            "Perfor\u00e9s",
+            "12 Onglets",
+            "Cartonn\u00e9s"
+        ],
+        "main_product_image": "products/intercalaires/intercalaires_12z_bristol.jpg",
+        "additional_images": [],
+        "url_name": "intercalaires_12z_bristol",
+        "url_link": "intercalaires/intercalaires_12z_bristol.html",
+        "objectID": "6040771"
+    },
+    {
+        "product_name": "Jeu de 12 intercalaires en plastique, A4",
+        "model_no": "n/a",
+        "product_category": "Intercalaires",
+        "product_details": [
+            "Format A4/21x29.7",
+            "Perfor\u00e9s",
+            "12 Onglets",
+            "PVC/Plastique"
+        ],
+        "main_product_image": "products/intercalaires/intercalaires_12z_pvc.jpg",
+        "additional_images": [],
+        "url_name": "intercalaires_12z_pvc",
+        "url_link": "intercalaires/intercalaires_12z_pvc.html",
+        "objectID": "6040741"
+    },
+    {
+        "product_name": "Jeu de 10 intercalaires cartonn\u00e9s, A4",
+        "model_no": "n/a",
+        "product_category": "Intercalaires",
+        "product_details": [
+            "Format A4/21x29.7",
+            "Perfor\u00e9s",
+            "10 Onglets",
+            "Cartonn\u00e9s"
+        ],
+        "main_product_image": "products/intercalaires/intercalaires_10z_bristol.jpg",
+        "additional_images": [],
+        "url_name": "intercalaires_10z_bristol",
+        "url_link": "intercalaires/intercalaires_10z_bristol.html",
+        "objectID": "6040701"
+    },
+    {
+        "product_name": "Jeu de 10 intercalaires en plastique, A4",
+        "model_no": "n/a",
+        "product_category": "Intercalaires",
+        "product_details": [
+            "Format A4/21x29.7",
+            "Perfor\u00e9s",
+            "10 Onglets",
+            "PVC/Plastique"
+        ],
+        "main_product_image": "products/intercalaires/intercalaires_10z_pvc.jpg",
+        "additional_images": [],
+        "url_name": "intercalaires_10z_pvc",
+        "url_link": "intercalaires/intercalaires_10z_pvc.html",
+        "objectID": "6040691"
+    },
+    {
+        "product_name": "Jeu de 6 intercalaires cartonn\u00e9s, A4",
+        "model_no": "n/a",
+        "product_category": "Intercalaires",
+        "product_details": [
+            "Format A4/21x29.7",
+            "Perfor\u00e9s",
+            "6 Onglets",
+            "Cartonn\u00e9s"
+        ],
+        "main_product_image": "products/intercalaires/intercalaires_6z_bristol.jpeg",
+        "additional_images": [],
+        "url_name": "intercalaires_6z_bristol",
+        "url_link": "intercalaires/intercalaires_6z_bristol.html",
+        "objectID": "6040311"
+    },
+    {
+        "product_name": "Jeu de 6 intercalaires en plastique, A4",
+        "model_no": "n/a",
+        "product_category": "Intercalaires",
+        "product_details": [
+            "Format A4/21x29.7",
+            "Perfor\u00e9s",
+            "6 Onglets",
+            "PVC/Plastique"
+        ],
+        "main_product_image": "products/intercalaires/intercalaires_6z_pvc.jpg",
+        "additional_images": [],
+        "url_name": "intercalaires_6z_pvc",
+        "url_link": "intercalaires/intercalaires_6z_pvc.html",
+        "objectID": "6040221"
+    },
+    {
+        "product_name": "Paquet de 10 Feuilles Millim\u00e9tr\u00e9es A4",
+        "model_no": "n/a",
+        "product_category": "Papiers",
+        "product_details": [
+            "Format 21x29.7/A4",
+            "Paquet de 10",
+            "Feuilles perfor\u00e9es"
+        ],
+        "main_product_image": "products/papiers/papier_graph.jpg",
+        "additional_images": [],
+        "url_name": "papier_millimetre",
+        "url_link": "papiers/papier_millimetre.html",
+        "objectID": "6040921"
+    },
+    {
+        "product_name": "Paquet de 10 Feuilles Calque Transparentes A4",
+        "model_no": "n/a",
+        "product_category": "Papiers",
+        "product_details": [
+            "Format 21x29.7/A4",
+            "Paquet de 10",
+            "Feuilles non-perfor\u00e9es"
+        ],
+        "main_product_image": "products/papiers/papier_calque.jpg",
+        "additional_images": [
+            "products/papiers/papier_calque_2.jpg"
+        ],
+        "url_name": "papier_calque",
+        "url_link": "papiers/papier_calque.html",
+        "objectID": "6040871"
+    },
+    {
         "product_name": "Copies doubles perfor\u00e9es 21x29.7 5x5 200p",
         "model_no": "n/a",
         "product_category": "Papiers",
@@ -821,6 +1096,116 @@
         "url_name": "feuilles_mobiles_seyes_200p",
         "url_link": "papiers/feuilles_mobiles_seyes_200p.html",
         "objectID": "5486451"
+    },
+    {
+        "product_name": "Stylo \u00e0 bille Bic 4 couleurs r\u00e9tractable",
+        "model_no": "n/a",
+        "product_category": "Stylos",
+        "product_details": [
+            "Pointe de 1.0mm",
+            "Stylo 4 couleurs: bleu, noir, rouge et vert",
+            "Marque: Bic"
+        ],
+        "main_product_image": "products/pens/bic_4_couleurs.jpg",
+        "additional_images": [
+            "products/pens/bic_4_couleurs_2.jpg"
+        ],
+        "url_name": "bic_4_couleurs",
+        "url_link": "stylos/bic_4_couleurs.html",
+        "objectID": "6042001"
+    },
+    {
+        "product_name": "Stylo \u00e0 bille Bic Cristal Pointe de 1.0mm",
+        "model_no": "n/a",
+        "product_category": "Stylos",
+        "product_details": [
+            "Pointe de 1.0mm",
+            "Disponible en bleu, noir, rouge et vert",
+            "Vendu \u00e0 l'unit\u00e9",
+            "Marque: Bic Cristal"
+        ],
+        "main_product_image": "products/pens/bic_cristal_all.jpg",
+        "additional_images": [
+            "products/pens/bic_cristal_blue.jpg",
+            "products/pens/bic_cristal_black.jpg",
+            "products/pens/bic_cristal_red.jpg",
+            "products/pens/bic_cristal_green.jpeg"
+        ],
+        "url_name": "bic_cristal",
+        "url_link": "stylos/bic_cristal.html",
+        "objectID": "6041911"
+    },
+    {
+        "product_name": "Surligneurs Staedtler Textsurfer",
+        "model_no": "n/a",
+        "product_category": "Stylos",
+        "product_details": [
+            "Disponible en plusieurs couleurs",
+            "Vendu \u00e0 l'unit\u00e9",
+            "Marque: Staedtler Textsurfer"
+        ],
+        "main_product_image": "products/pens/surligneurs_staedtler.jpg",
+        "additional_images": [
+            "products/pens/surligneurs_staedtler_2.jpg"
+        ],
+        "url_name": "surligneurs_staedtler",
+        "url_link": "stylos/surligneurs_staedtler.html",
+        "objectID": "6041661"
+    },
+    {
+        "product_name": "Surligneurs Stabilo Boss",
+        "model_no": "n/a",
+        "product_category": "Stylos",
+        "product_details": [
+            "Disponible en plusieurs couleurs",
+            "Marque: Stabilo Boss"
+        ],
+        "main_product_image": "products/pens/surligneurs_stabilo.jpg",
+        "additional_images": [
+            "products/pens/surligneurs_stabilo_2.jpg"
+        ],
+        "url_name": "surligneurs_stabilo",
+        "url_link": "stylos/surligneurs_stabilo.html",
+        "objectID": "6041631"
+    },
+    {
+        "product_name": "Stylo Uni Compo Fine-Liner/Pointe fine",
+        "model_no": "n/a",
+        "product_category": "Stylos",
+        "product_details": [
+            "Pointe fine",
+            "Disponible en bleu, noir, rouge et vert",
+            "Vendu \u00e0 l'unit\u00e9",
+            "Marque: Uni Compo"
+        ],
+        "main_product_image": "products/pens/uni_compo_all.jpeg",
+        "additional_images": [
+            "products/pens/uni_compo_blue.jpg"
+        ],
+        "url_name": "uni_compo",
+        "url_link": "stylos/uni_compo.html",
+        "objectID": "6041551"
+    },
+    {
+        "product_name": "Stylo Cello Finegrip Pointe de 0.7mm",
+        "model_no": "n/a",
+        "product_category": "Stylos",
+        "product_details": [
+            "Pointe de 0.7mm",
+            "Disponible en bleu, noir, rouge et vert",
+            "Vendu \u00e0 l'unit\u00e9",
+            "Marque: Cello Finegrip"
+        ],
+        "main_product_image": "products/pens/cellofinegrip_all.jpg",
+        "additional_images": [
+            "products/pens/cellofinegrip_blue.jpg",
+            "products/pens/cellofinegrip_black.jpg",
+            "products/pens/cellofinegrip_red.jpg",
+            "products/pens/cellofinegrip_green.jpeg"
+        ],
+        "url_name": "cellofinegrip",
+        "url_link": "stylos/cellofinegrip.html",
+        "objectID": "6041401"
     },
     {
         "product_name": "Blanco/Correction Pen, Pointe en plastique, UNI",
