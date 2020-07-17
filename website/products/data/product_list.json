@@ -198,12 +198,12 @@
         "objectID": "5484541"
     },
     {
-        "product_name": "Cahier 17x22 32/48/96/192pg S\u00e9y\u00e8s Polypro",
+        "product_name": "Cahier 17x22 48/96/192pg S\u00e9y\u00e8s Polypro",
         "model_no": "n/a",
         "product_category": "Cahiers",
         "product_details": [
             "Format 17x22",
-            "Disponible en 32/48/96/192 pages",
+            "Disponible en 48/96/192 pages",
             "S\u00e9y\u00e8s/Grand carreaux",
             "Couverture Polypro",
             "Marque Calligraphe",
@@ -275,6 +275,48 @@
         "url_name": "calculatrice_casio_fx_92",
         "url_link": "papeterie/calculatrice_casio_fx_92.html",
         "objectID": "2163570"
+    },
+    {
+        "product_name": "Classeur rembord\u00e9 A4 Mince, 4 anneaux, Exacompta",
+        "model_no": "n/a",
+        "product_category": "Classeurs",
+        "product_details": [
+            "Format A4",
+            "Polypropyl\u00e8ne",
+            "Dos de 20mm (Mince)",
+            "4 anneaux",
+            "Disponible en diverses couleurs",
+            "Marque Exacompta"
+        ],
+        "main_product_image": "products/classeurs/exacompta_a4_20mm.jpg",
+        "additional_images": [
+            "products/classeurs/exacompta_a4_20mm_2.jpg",
+            "products/classeurs/exacompta_a4_20mm_3.jpg"
+        ],
+        "url_name": "exacompta_remborde_PP_a4_20mm",
+        "url_link": "classeurs/exacompta_remborde_PP_a4_20mm.html",
+        "objectID": "6082151"
+    },
+    {
+        "product_name": "Classeur rembord\u00e9 A4 Epais, 4 anneaux, Exacompta",
+        "model_no": "n/a",
+        "product_category": "Classeurs",
+        "product_details": [
+            "Format A4",
+            "Polypropyl\u00e8ne",
+            "Dos de 40mm (Epais)",
+            "4 anneaux",
+            "Disponible en diverses couleurs",
+            "Marque Exacompta"
+        ],
+        "main_product_image": "products/classeurs/exacompta_a4_40mm.jpg",
+        "additional_images": [
+            "products/classeurs/exacompta_a4_40mm_2.jpg",
+            "products/classeurs/exacompta_a4_40mm_3.jpg"
+        ],
+        "url_name": "exacompta_remborde_PP_a4_40mm",
+        "url_link": "classeurs/exacompta_remborde_PP_a4_40mm.html",
+        "objectID": "6082141"
     },
     {
         "product_name": "Classeur pour fiches cartonn\u00e9es(A5) Viquel",
