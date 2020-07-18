@@ -35,37 +35,26 @@
 <div class="container">
     <div class="pb-3 mb-3 border-bottom">
         <h2 class="h1 font-italic">Dernières nouvelles</h2>
-        <small class="last-updated-timestamp">dernière mise à jour - 30/06/2020</small>
+        {% if last_updated.updated_date %}
+            <small class="last-updated-timestamp">dernière mise à jour - {{ last_updated.updated_date|date:"SHORT_DATE_FORMAT" }}</small>
+        {% else %}
+            <small class="last-updated-timestamp">dernière mise à jour - N/A</small>
+        {% endif %}
     </div>
 
     <!-- This is where you can add/delete notice -->
+    {% for notice in object_list %}
+        <div class="notice-post border-bottom">
+            <h3 class="notice-post-title">{{ notice.notice_title }}</h3>
+            <p>
+                {{ notice.notice_message|linebreaks }}
+            </p>
+        </div>
+    {% empty %}
     <div class="notice-post border-bottom">
-        <h3 class="notice-post-title">
-            Vente scolaire</h3>
-        <p>
-            Chère clientèle, <br>
-            We will be selling stationaries and books at the High School Sale in High School A.<br/>
-            Please visit our booth when you are there!
-        </p>
-        <ul>
-            <li>Date: Fri, 14 Aug 2020</li>
-            <li>Time: 11:00 - 16:00</li>
-            <li>Location: Booth 123A</li>
-        </ul>
-        <p>
-            Magasin T.F Ng Lun
-        </p>
+        <h3 class="notice-post-title">Pas de nouvelles récentes.</h3>
     </div>
+    {% endfor %}
 
-    <div class="notice-post">
-        <h3 class="notice-post-title">
-            Ganesh Chaturthi - Jour férié</h3>
-        <p >
-            Chère clientèle, <br>
-            Nous tenons à vous informer que nous serons fermer le Samedi 22 Août 2020 en l'honneur de la fête Ganesh Chaturthi.<br/>
-            Nous serons de retour le Lundi 24 Août 2020. Nous nous excusons pour tout inconvénient. Bonne fête!
-            <br> Magasin T.F Ng Lun
-        </p>
-    </div>
 </div>
 {% endblock %}
