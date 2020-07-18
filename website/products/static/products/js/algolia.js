@@ -20,6 +20,17 @@ search.addWidgets([
     instantsearch.widgets.refinementList({
         container: '#refinement-list',
         attribute: 'product_category',
+        showMore: true,
+        templates: {
+          showMoreText: `
+            {{#isShowingMore}}
+              Montrer moins
+            {{/isShowingMore}}
+            {{^isShowingMore}}
+              Montrer plus
+            {{/isShowingMore}}
+          `,
+        },
     }),
     instantsearch.widgets.poweredBy({
       container: '#powered-by',
