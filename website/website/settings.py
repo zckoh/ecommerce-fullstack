@@ -11,6 +11,8 @@ https://docs.djangoproject.com/en/3.0/ref/settings/
 """
 
 import os
+import urllib
+from google.oauth2 import service_account
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -37,10 +39,24 @@ INSTALLED_APPS = [
     'contact.apps.ContactConfig',
     'products.apps.ProductsConfig',
     'django.contrib.staticfiles',
+    'django.contrib.admin',
+    'django.contrib.auth',
+    'django.contrib.contenttypes',
+    'django.contrib.sessions',
+    'django.contrib.messages',
+    'django_cleanup.apps.CleanupConfig',
+    'algoliasearch_django',
 ]
 
 MIDDLEWARE = [
     'django.middleware.common.CommonMiddleware',
+    'django.middleware.security.SecurityMiddleware',
+    'django.contrib.sessions.middleware.SessionMiddleware',
+    'django.middleware.common.CommonMiddleware',
+    'django.middleware.csrf.CsrfViewMiddleware',
+    'django.contrib.auth.middleware.AuthenticationMiddleware',
+    'django.contrib.messages.middleware.MessageMiddleware',
+    'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
 ROOT_URLCONF = 'website.urls'
@@ -54,6 +70,7 @@ TEMPLATES = [
             'context_processors': [
                 'django.template.context_processors.debug',
                 'django.template.context_processors.request',
+                'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
             ],
         },
@@ -67,13 +84,40 @@ WSGI_APPLICATION = 'website.wsgi.application'
 # https://docs.djangoproject.com/en/3.0/ref/settings/#databases
 
 DATABASES = {
+    "default": {
+        "ENGINE": "djongo",
+        "CLIENT": {
+            "host": "mongodb+srv://" + os.environ.get('MONGO_DB_USERNAME') + ":" + os.environ.get('MONGO_DB_PASSWORD') + 
+                    "@mumbai-db-tfnglun.ubwid.gcp.mongodb.net/?retryWrites=true&w=majority",
+            "username": os.environ.get('MONGO_DB_USERNAME'),
+            "password": os.environ.get('MONGO_DB_PASSWORD'),
+            "name": "tf-nglun-db",
+            "authMechanism": "SCRAM-SHA-1",
+        },
+    },
 }
 
+ALGOLIA = {
+    'APPLICATION_ID': '9SXIDIVU1E',
+    'API_KEY': os.environ.get('ALGOLIA_API_KEY')
+}
 
 # Password validation
 # https://docs.djangoproject.com/en/3.0/ref/settings/#auth-password-validators
 
 AUTH_PASSWORD_VALIDATORS = [
+    {
+        'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',
+    },
+    {
+        'NAME': 'django.contrib.auth.password_validation.MinimumLengthValidator',
+    },
+    {
+        'NAME': 'django.contrib.auth.password_validation.CommonPasswordValidator',
+    },
+    {
+        'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator',
+    },
 ]
 
 
@@ -100,3 +144,10 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, "static"),
 ]
+
+DEFAULT_FILE_STORAGE = 'storages.backends.gcloud.GoogleCloudStorage'
+GS_BUCKET_NAME = 'tfnglun.appspot.com'
+GS_CREDENTIALS = service_account.Credentials.from_service_account_file(
+    BASE_DIR + '/products/keys/json/' + os.environ.get('GS_CLOUD_KEY_FILENAME')
+)
+

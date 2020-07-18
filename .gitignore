@@ -144,3 +144,6 @@ Pipfile.lock
 
 # macOS files
 .DS_STORE
+
+# Google Cloud Storage Keys
+website/products/keys/json/*.json

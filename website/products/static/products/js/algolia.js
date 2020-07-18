@@ -1,10 +1,10 @@
 const searchClient = algoliasearch(
-    '9SXIDIVU1E',
-    '2f579f9adf3af05e58b1859a5f182edb'
+    'N3F75G0U52',
+    '35f5cf9db1a99f6024840246fdf8114c'
 );
 
 const search = instantsearch({
-    indexName: 'products_index',
+    indexName: 'Product',
     searchClient,
     routing: true,
 });
@@ -45,16 +45,16 @@ const renderHits = (renderOptions, isFirstRender) => {
                     item =>
             `<div class="col-md-4">
                 <div class="card mb-4 box-shadow">
-                    <a href="${item.url_link}">
-                      <img class="card-img-top product-thumbnail" src="/static/${item.main_product_image}"
+                    <a href="${item.slug}">
+                      <img class="card-img-top product-thumbnail" src="/images/${item.main_product_image}"
                           alt="${item.main_product_image}">
                     </a>
                     <div class="card-body">
-                        <a href="${item.url_link}" class="text-dark">
+                        <a href="/products/${item.slug}" class="text-dark">
                             <h5 class="card-title">${item.product_name}</h5>
                         </a>
                         <p class="card-text">Référence: ${item.model_no}</p>
-                        <a href="${item.url_link}" class="btn btn-primary">Voir</a>
+                        <a href="${item.slug}" class="btn btn-primary">Voir</a>
                     </div>
                 </div>
             </div>`
