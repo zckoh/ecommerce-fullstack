@@ -99,7 +99,7 @@ const renderPagination = (renderOptions, isFirstRender) => {
                   href="${createURL(0)}"
                   data-value="${0}"
                 >
-                  First
+                  Première page
                 </a>
               </li>
               <li class="page-item">
@@ -147,7 +147,7 @@ const renderPagination = (renderOptions, isFirstRender) => {
                     href="${createURL(nbPages - 1)}"
                     data-value="${nbPages - 1}"
                   >
-                    Last
+                    Dernière page
                   </a>
                 </li>
                 `

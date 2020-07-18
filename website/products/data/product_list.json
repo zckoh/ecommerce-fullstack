@@ -277,27 +277,6 @@
         "objectID": "2163570"
     },
     {
-        "product_name": "Classeur rembord\u00e9 A4 Mince, 4 anneaux, Exacompta",
-        "model_no": "n/a",
-        "product_category": "Classeurs",
-        "product_details": [
-            "Format A4",
-            "Polypropyl\u00e8ne",
-            "Dos de 20mm (Mince)",
-            "4 anneaux",
-            "Disponible en diverses couleurs",
-            "Marque Exacompta"
-        ],
-        "main_product_image": "products/classeurs/exacompta_a4_20mm.jpg",
-        "additional_images": [
-            "products/classeurs/exacompta_a4_20mm_2.jpg",
-            "products/classeurs/exacompta_a4_20mm_3.jpg"
-        ],
-        "url_name": "exacompta_remborde_PP_a4_20mm",
-        "url_link": "classeurs/exacompta_remborde_PP_a4_20mm.html",
-        "objectID": "6082151"
-    },
-    {
         "product_name": "Classeur rembord\u00e9 A4 Epais, 4 anneaux, Exacompta",
         "model_no": "n/a",
         "product_category": "Classeurs",
@@ -369,25 +348,26 @@
         "objectID": "5747411"
     },
     {
-        "product_name": "Classeur A4, dos arrondis",
-        "model_no": "CLA4DA",
-        "product_category": "Classeurs",
+        "product_name": "Double d\u00e9cim\u00e8tre (20cm), Maped",
+        "model_no": "n/a",
+        "product_category": "Divers",
         "product_details": [
-            "Format A4",
-            "Marque Exacompta"
+            "20cm",
+            "PVC/ Plastique",
+            "Marque: Maped"
         ],
-        "main_product_image": "products/classeurs/exacompta_a4.png",
+        "main_product_image": "products/stationeries/maped_double_decimetre.jpg",
         "additional_images": [],
-        "url_name": "exacompta_a4",
-        "url_link": "classeurs/exacompta_a4.html",
-        "objectID": "5056551"
+        "url_name": "maped_double_decimetre",
+        "url_link": "divers/maped_double_decimetre.html",
+        "objectID": "6113731"
     },
     {
         "product_name": "Pinceaux pour aquarelle, Picasso manche bleu",
         "model_no": "n/a",
         "product_category": "Divers",
         "product_details": [
-            "Disponible en num\u00e9ro 2,6 et 8",
+            "Disponible en num\u00e9ro 2,6,8 et 12",
             "Marque: Picasso"
         ],
         "main_product_image": "products/stationeries/pinceau_bross_bleu.jpeg",
@@ -436,12 +416,12 @@
         "objectID": "6041181"
     },
     {
-        "product_name": "Pochette en plastique \u00e0 rabats A4 Exacompta",
+        "product_name": "Pochette en plastique \u00e0 rabats 24x32 Exacompta",
         "model_no": "n/a",
         "product_category": "Divers",
         "product_details": [
             "Pochette \u00e0 \u00e9lastiques",
-            "Format A4/21x29.7",
+            "Format 24x32",
             "PVC/ Plastique",
             "Marque: Exacompta"
         ],
@@ -501,13 +481,13 @@
         "objectID": "6039981"
     },
     {
-        "product_name": "Bo\u00eete de 12 Feutres fins, BIC",
+        "product_name": "Paquet de 12 Feutres fins, BIC Kids",
         "model_no": "n/a",
         "product_category": "Divers",
         "product_details": [
             "Feutres fins",
-            "Bo\u00eete de 12",
-            "Marque: BIC, Plastidecor"
+            "Paquet de 12",
+            "Marque: BIC"
         ],
         "main_product_image": "products/stationeries/feutres_12_bic.jpg",
         "additional_images": [],
@@ -516,12 +496,12 @@
         "objectID": "6039931"
     },
     {
-        "product_name": "Bo\u00eete de 12 Feutres fins, Staedtler",
+        "product_name": "Paquet de 12 Feutres fins, Staedtler",
         "model_no": "n/a",
         "product_category": "Divers",
         "product_details": [
             "Feutres fins",
-            "Bo\u00eete de 12",
+            "Paquet de 12",
             "Marque: Staedtler, Noris Club"
         ],
         "main_product_image": "products/stationeries/feutres_12_staedtler.jpg",
