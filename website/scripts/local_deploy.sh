@@ -14,13 +14,6 @@ if [[ $? -ne 0 ]]; then
     exit 1
 fi
 
-# Updates the product list
-pipenv run python ${django_root}/scripts/update_product_list.py
-if [[ $? -ne 0 ]]; then
-    echo "ERROR: Failed to update product list, aborted local_deploy script."
-    exit 1
-fi
-
 ${django_root}/scripts/toggle_debug_flag.sh
 
 pipenv run python manage.py runserver
