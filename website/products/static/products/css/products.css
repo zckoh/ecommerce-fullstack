@@ -29,3 +29,11 @@
 .carousel-inner img{
     display:inline-block  !important;
 }
+
+.facet {
+    background-color: rgb(243, 243, 243);
+}
+
+.product-body {
+    background-color: rgb(243, 243, 243);
+}

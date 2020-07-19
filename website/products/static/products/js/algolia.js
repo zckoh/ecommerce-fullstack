@@ -60,7 +60,7 @@ const renderHits = (renderOptions, isFirstRender) => {
                       <img class="card-img-top product-thumbnail" src="https://storage.googleapis.com/tfnglun.appspot.com/${item.main_product_image}"
                           alt="${item.main_product_image}">
                     </a>
-                    <div class="card-body">
+                    <div class="card-body product-body">
                         <a href="/products/${item.slug}" class="text-dark">
                             <h5 class="card-title">${item.product_name}</h5>
                         </a>
