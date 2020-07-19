@@ -46,6 +46,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django_cleanup.apps.CleanupConfig',
     'algoliasearch_django',
+    'django.contrib.sitemaps',
 ]
 
 MIDDLEWARE = [
