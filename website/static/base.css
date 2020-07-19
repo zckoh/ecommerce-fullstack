@@ -1,13 +1,11 @@
 html {
     height: 100%;
-    background-color: #FFE5D9;
 }
 
 body {
     display: flex;
     flex-direction: column;
     height: 100%;
-    background-image: linear-gradient(#FFFFFF, 70%, #FFE5D9);
     background-repeat:no-repeat;
 }
 
