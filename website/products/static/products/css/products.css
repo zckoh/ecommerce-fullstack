@@ -29,3 +29,7 @@
 .carousel-inner img{
     display:inline-block  !important;
 }
+
+.ais-RefinementList-showMore {
+    background-color: #007bff !important;
+}
