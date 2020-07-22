@@ -26,6 +26,10 @@ Website for physical shop to provide more infomation about the shop's services, 
   - Added robots.txt
   - Added sitemap.xml generated via django-sitemaps
 
+## Future Improvements
+- Implement online payment solution using services like Stripe / Shopify.
+- Migrate to AWS.
+
 ## Technologies used
 Python 3.7  
 Django 3.0.8  
