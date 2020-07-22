@@ -37,11 +37,10 @@
     <meta name="msapplication-TileImage" content="{% static 'icons/ms-icon-144x144.png' %}?v=3">
     <meta name="theme-color" content="#ffffff">
 
-    <!-- Custom static files -->
     <link rel="stylesheet" type="text/css" href="{% static 'base.css' %}">
 
-    <!-- Canonical tag to point to only tfnglun.com -->
-    <link rel="canonical" href="https://www.tfnglun.com">
+    {% block canonical_tag %}
+    {% endblock %}
 
     <meta property="og:title" content="T.F. Ng Lun">
     <meta property="og:description" content="Nous sommes une papêterie basée à Curepipe, Ile Maurice. Nous vous proposons une gamme de produits tels que des stylos, cahiers, classeurs, agenda en autres.">

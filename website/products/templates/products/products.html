@@ -2,6 +2,10 @@
 {% load static %}
 
 <head>
+    {% block canonical_tag %}
+        <link rel="canonical" href="https://www.tfnglun.com/products/">
+    {% endblock %}
+
     {% block additional_static_files %}
     <link rel="stylesheet" type="text/css" href="{% static 'products/css/products.css' %}">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/instantsearch.css@7.3.1/themes/algolia-min.css"

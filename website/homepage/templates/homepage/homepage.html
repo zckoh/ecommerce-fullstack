@@ -1,6 +1,10 @@
 {% extends "base.html" %}
 {% load static %}
 <head>
+    {% block canonical_tag %}
+        <link rel="canonical" href="https://www.tfnglun.com">
+    {% endblock %}
+
     {% block additional_static_files %}
     <link rel="stylesheet" type="text/css" href="{% static 'homepage/css/homepage.css' %}">
     {% endblock %}
