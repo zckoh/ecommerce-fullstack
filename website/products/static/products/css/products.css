@@ -33,3 +33,14 @@
 .ais-RefinementList-showMore {
     background-color: #007bff !important;
 }
+
+.ais-Pagination-item .ais-Pagination-link{
+    color: #007bff !important;
+}
+
+.ais-Pagination-item--selected .ais-Pagination-link{
+    color: #fff !important;
+    background-color: #007bff !important;
+    border-color: #007bff !important;
+}
+

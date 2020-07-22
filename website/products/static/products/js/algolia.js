@@ -32,6 +32,10 @@ search.addWidgets([
           `,
         },
     }),
+    instantsearch.widgets.pagination({
+      padding: '2',
+      container: '#pagination',
+    }),
     instantsearch.widgets.poweredBy({
       container: '#powered-by',
     }),
@@ -82,108 +86,6 @@ const customHits = instantsearch.connectors.connectHits(renderHits);
 search.addWidgets([
     customHits({
         container: document.querySelector('#hits'),
-    })
-]);
-
-// Pagination
-// Custom render function for Pagination widget
-const renderPagination = (renderOptions, isFirstRender) => {
-    const {
-        pages,
-        currentRefinement,
-        nbPages,
-        isFirstPage,
-        isLastPage,
-        refine,
-        createURL,
-    } = renderOptions;
-
-    const container = document.querySelector('#pagination');
-
-    container.innerHTML = `
-      <ul class="pagination justify-content-center">
-        ${
-        !isFirstPage
-            ? `
-              <li class="page-item">
-                <a class="page-link"
-                  href="${createURL(0)}"
-                  data-value="${0}"
-                >
-                  Première page
-                </a>
-              </li>
-              <li class="page-item">
-                <a class="page-link" aria-label="Previous"
-                href="${createURL(currentRefinement - 1)}"
-                  data-value="${currentRefinement - 1}"
-                >
-                <span aria-hidden="true">&laquo;</span>
-                <span class="sr-only">Previous</span>
-              </a>
-              </li>
-              `
-            : ''
-        }
-        ${pages
-            .map(
-                page => `
-              <li class="page-item">
-                <a class="page-link"
-                  href="${createURL(page)}"
-                  data-value="${page}"
-                  style="font-weight: ${currentRefinement === page ? 'bold' : ''}"
-                >
-                  ${page + 1}
-                </a>
-              </li>
-            `
-            )
-            .join('')}
-          ${
-        !isLastPage
-            ? `
-                <li class="page-item">
-                  <a class="page-link" aria-label="Next"
-                    href="${createURL(currentRefinement + 1)}"
-                    data-value="${currentRefinement + 1}"
-                  >
-                      <span aria-hidden="true">&raquo;</span>
-                      <span class="sr-only">Next</span>
-                </a>
-
-                </li>
-                <li class="page-item">
-                  <a class="page-link"
-                    href="${createURL(nbPages - 1)}"
-                    data-value="${nbPages - 1}"
-                  >
-                    Dernière page
-                  </a>
-                </li>
-                `
-            : ''
-        }
-      </ul>
-    `;
-
-    [...container.querySelectorAll('a')].forEach(element => {
-        element.addEventListener('click', event => {
-            event.preventDefault();
-            refine(event.currentTarget.dataset.value);
-        });
-    });
-};
-
-// Create the custom widget
-const customPagination = instantsearch.connectors.connectPagination(
-    renderPagination
-);
-
-// Instantiate the custom widget
-search.addWidgets([
-    customPagination({
-        container: document.querySelector('#pagination'),
     })
 ]);
 
